@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "version": "2026-10-20-lecture-v2",
+  "version": "2026-10-21-math-v1",
   "status": "ready",
   "target_date": "2027-01-16",
   "days": [
@@ -115,7 +115,8 @@
       "question": "感度80%、特異度90%、有病率10%の検査で陽性時の有病確率は？",
       "answer": "0.08/(0.08+0.09)=8/17≈47.1%",
       "explanation": "全確率の公式で陽性確率を求める。",
-      "pitfall": "感度と陽性的中率を混同しない。"
+      "pitfall": "感度と陽性的中率を混同しない。",
+      "formula_latex": "P(A\\mid B)=\\frac{P(B\\mid A)P(A)}{P(B)}"
     },
     {
       "id": "Q002",
@@ -126,7 +127,8 @@
       "question": "X~Bin(5,0.2)のP(X=1)は？",
       "answer": "5×0.2×0.8^4=0.4096",
       "explanation": "二項確率質量関数。",
-      "pitfall": "成功回数の順序を区別しないため組合せ係数を忘れない。"
+      "pitfall": "成功回数の順序を区別しないため組合せ係数を忘れない。",
+      "formula_latex": "P(X=k)=\\binom nk p^k(1-p)^{n-k}"
     },
     {
       "id": "Q003",
@@ -137,7 +139,8 @@
       "question": "独立なベルヌーイ標本で成功7回、失敗3回のpのMLEは？",
       "answer": "0.7",
       "explanation": "対数尤度をpで微分。",
-      "pitfall": "確率を最大化するのであって、事後確率を最大化するMAP推定とは異なる。"
+      "pitfall": "確率を最大化するのであって、事後確率を最大化するMAP推定とは異なる。",
+      "formula_latex": "\\hat p=\\frac{\\sum_i X_i}{n}"
     },
     {
       "id": "Q004",
@@ -148,7 +151,8 @@
       "question": "有意水準5%でp値0.03なら棄却するか？",
       "answer": "帰無仮説を棄却する",
       "explanation": "p値は帰無仮説が正しい確率ではない。",
-      "pitfall": "p値を『帰無仮説が正しい確率』と解釈しない。"
+      "pitfall": "p値を『帰無仮説が正しい確率』と解釈しない。",
+      "formula_latex": "p\\leq\\alpha\\ \\Longrightarrow\\ H_0\\text{を棄却}"
     },
     {
       "id": "Q005",
@@ -159,7 +163,8 @@
       "question": "ŷ=4+2x1−3x2。x1を3増やしx2を固定したときの変化は？",
       "answer": "+6",
       "explanation": "偏回帰係数×変化量。",
-      "pitfall": "他の変数を固定するという条件を落とさない。"
+      "pitfall": "他の変数を固定するという条件を落とさない。",
+      "formula_latex": "\\Delta\\hat y=\\beta_1\\Delta x_1"
     },
     {
       "id": "Q006",
@@ -170,7 +175,8 @@
       "question": "P(A∩B)=0.12、P(B)=0.3ならP(A|B)は？",
       "answer": "0.4",
       "explanation": "同時確率÷条件事象の確率。",
-      "pitfall": "P(A|B)とP(B|A)を取り違えない。"
+      "pitfall": "P(A|B)とP(B|A)を取り違えない。",
+      "formula_latex": "P(A\\mid B)=\\frac{P(A\\cap B)}{P(B)}"
     },
     {
       "id": "Q007",
@@ -181,7 +187,8 @@
       "question": "X~Pois(2)のP(X=0)は？",
       "answer": "e^(−2)≈0.1353",
       "explanation": "確率質量関数。",
-      "pitfall": "λは対象期間全体の期待回数。"
+      "pitfall": "λは対象期間全体の期待回数。",
+      "formula_latex": "P(X=k)=\\frac{e^{-\\lambda}\\lambda^k}{k!}"
     },
     {
       "id": "Q008",
@@ -192,7 +199,8 @@
       "question": "標本平均が4のとき、Pois(λ)のモーメント推定量は？",
       "answer": "λ̂=4",
       "explanation": "母平均λと標本平均を等置。",
-      "pitfall": "最尤推定と一致することもあるが、一般には別手法。"
+      "pitfall": "最尤推定と一致することもあるが、一般には別手法。",
+      "formula_latex": "\\hat\\lambda=\\overline X"
     },
     {
       "id": "Q009",
@@ -203,7 +211,8 @@
       "question": "第一種の過誤αと第二種の過誤βを用いて検出力を表せ。",
       "answer": "1−β",
       "explanation": "対立仮説の下で棄却する確率。",
-      "pitfall": "検出力を1−αとしない。"
+      "pitfall": "検出力を1−αとしない。",
+      "formula_latex": "\\mathrm{Power}=1-\\beta"
     },
     {
       "id": "Q010",
@@ -214,7 +223,8 @@
       "question": "3群、各5観測の一元配置ANOVAの群間・群内自由度は？",
       "answer": "2、12",
       "explanation": "k−1、N−k。",
-      "pitfall": "自由度は各群の標本数ではなく群数と総標本数で決まる。"
+      "pitfall": "自由度は各群の標本数ではなく群数と総標本数で決まる。",
+      "formula_latex": "df_{\\mathrm{between}}=k-1,\\quad df_{\\mathrm{within}}=N-k"
     },
     {
       "id": "Q011",
@@ -225,7 +235,8 @@
       "question": "E[X]=3、E[Y]=−1ならE[2X−Y]は？",
       "answer": "7",
       "explanation": "期待値の線形性。",
-      "pitfall": "期待値の和と積の性質を混同しない。"
+      "pitfall": "期待値の和と積の性質を混同しない。",
+      "formula_latex": "E[aX+bY+c]=aE[X]+bE[Y]+c"
     },
     {
       "id": "Q012",
@@ -236,7 +247,8 @@
       "question": "X~N(10,4)の標準化変数Zを表せ。",
       "answer": "(X−10)/2",
       "explanation": "第2引数は分散。",
-      "pitfall": "N(10,4)の分母は4ではなく2。"
+      "pitfall": "N(10,4)の分母は4ではなく2。",
+      "formula_latex": "Z=\\frac{X-\\mu}{\\sigma}"
     },
     {
       "id": "Q013",
@@ -247,7 +259,8 @@
       "question": "標本平均10、既知母標準偏差4、n=16の95%両側CIは？",
       "answer": "10±1.96×1= [8.04,11.96]",
       "explanation": "既知分散の正規近似。",
-      "pitfall": "標本数nではなく√nで割る。母分散未知・小標本ではt分布を検討。"
+      "pitfall": "標本数nではなく√nで割る。母分散未知・小標本ではt分布を検討。",
+      "formula_latex": "\\overline X\\pm z_{0.975}\\frac{\\sigma}{\\sqrt n}"
     },
     {
       "id": "Q014",
@@ -258,7 +271,8 @@
       "question": "尤度比Λ=L(θ̂0)/L(θ̂)の値域は？",
       "answer": "0≤Λ≤1",
       "explanation": "制約付き最大尤度は全体最大尤度以下。",
-      "pitfall": "分子と分母を逆にしない。"
+      "pitfall": "分子と分母を逆にしない。",
+      "formula_latex": "\\Lambda=\\frac{\\sup_{\\theta\\in\\Theta_0}L(\\theta)}{\\sup_{\\theta\\in\\Theta}L(\\theta)}"
     },
     {
       "id": "Q015",
@@ -269,7 +283,8 @@
       "question": "N=101、n=11で分散の有限母集団修正(N−n)/(N−1)は？",
       "answer": "0.9",
       "explanation": "非復元抽出時の補正。",
-      "pitfall": "分散への補正係数と標準誤差への補正係数を混同しない。"
+      "pitfall": "分散への補正係数と標準誤差への補正係数を混同しない。",
+      "formula_latex": "\\frac{N-n}{N-1}"
     },
     {
       "id": "Q016",
@@ -280,7 +295,8 @@
       "question": "Var(X)=9ならVar(2X+5)は？",
       "answer": "36",
       "explanation": "定数加算で分散不変、係数の二乗倍。",
-      "pitfall": "係数aを二乗し忘れない。"
+      "pitfall": "係数aを二乗し忘れない。",
+      "formula_latex": "\\mathrm{Var}(aX+b)=a^2\\mathrm{Var}(X)"
     },
     {
       "id": "Q017",
@@ -291,7 +307,8 @@
       "question": "X~Exp(rate=2)の平均は？",
       "answer": "1/2",
       "explanation": "rateパラメータの逆数。",
-      "pitfall": "rate λとscale 1/λのパラメータ化を確認する。"
+      "pitfall": "rate λとscale 1/λのパラメータ化を確認する。",
+      "formula_latex": "E[X]=\\frac1\\lambda,\\quad f(x)=\\lambda e^{-\\lambda x}"
     },
     {
       "id": "Q018",
@@ -302,7 +319,8 @@
       "question": "Bernoulli(p)の独立標本におけるpの十分統計量を一つ挙げよ。",
       "answer": "成功回数ΣXi",
       "explanation": "尤度が成功回数のみに依存。",
-      "pitfall": "十分性は不偏性や効率性とは別の概念。"
+      "pitfall": "十分性は不偏性や効率性とは別の概念。",
+      "formula_latex": "L(p)=p^{\\sum X_i}(1-p)^{n-\\sum X_i}"
     },
     {
       "id": "Q019",
@@ -313,7 +331,8 @@
       "question": "独立な2群の平均差を検定するとき、分散が等しいと仮定しないt検定の名称は？",
       "answer": "Welchのt検定",
       "explanation": "等分散を仮定しない。",
-      "pitfall": "等分散を仮定するプールされたt検定と区別する。"
+      "pitfall": "等分散を仮定するプールされたt検定と区別する。",
+      "formula_latex": "t=\\frac{\\overline X-\\overline Y}{\\sqrt{s_1^2/n_1+s_2^2/n_2}}"
     },
     {
       "id": "Q020",
@@ -324,7 +343,8 @@
       "question": "共分散行列の固有値が4,1のとき第1主成分の寄与率は？",
       "answer": "4/5=80%",
       "explanation": "固有値÷固有値総和。",
-      "pitfall": "固有値の合計で割り、最大固有値が第1主成分。"
+      "pitfall": "固有値の合計で割り、最大固有値が第1主成分。",
+      "formula_latex": "\\mathrm{寄与率}_j=\\frac{\\lambda_j}{\\sum_k\\lambda_k}"
     },
     {
       "id": "Q021",
@@ -335,7 +355,8 @@
       "question": "Cov(X,Y)=2ならCov(3X,−2Y)は？",
       "answer": "−12",
       "explanation": "Cov(aX,bY)=abCov(X,Y)。",
-      "pitfall": "Var(aX)のa²とCov(aX,cY)のacを区別する。"
+      "pitfall": "Var(aX)のa²とCov(aX,cY)のacを区別する。",
+      "formula_latex": "\\mathrm{Cov}(aX+b,cY+d)=ac\\,\\mathrm{Cov}(X,Y)"
     },
     {
       "id": "Q022",
@@ -346,7 +367,8 @@
       "question": "Gamma(shape=3,rate=2)の平均は？",
       "answer": "1.5",
       "explanation": "shape/rate。",
-      "pitfall": "rateとscaleの取り違えが典型的な失点原因。"
+      "pitfall": "rateとscaleの取り違えが典型的な失点原因。",
+      "formula_latex": "E[X]=\\frac{\\alpha}{\\beta}\\quad(\\mathrm{rate}\\ \\beta)"
     },
     {
       "id": "Q023",
@@ -357,7 +379,8 @@
       "question": "独立なn個のN(μ,σ²)でσ²既知のときμに関する情報量は？",
       "answer": "n/σ²",
       "explanation": "対数尤度の2階微分の期待値。",
-      "pitfall": "標本数n倍されるのは独立観測の情報量。"
+      "pitfall": "標本数n倍されるのは独立観測の情報量。",
+      "formula_latex": "I(\\mu)=\\frac n{\\sigma^2}"
     },
     {
       "id": "Q024",
@@ -368,7 +391,8 @@
       "question": "W=(θ̂−θ0)/SE(θ̂)の帰無仮説下での大標本近似分布は？",
       "answer": "標準正規分布",
       "explanation": "漸近正規性による。",
-      "pitfall": "小標本で常に標準正規になるわけではない。"
+      "pitfall": "小標本で常に標準正規になるわけではない。",
+      "formula_latex": "W=\\frac{\\hat\\theta-\\theta_0}{\\mathrm{SE}(\\hat\\theta)}"
     },
     {
       "id": "Q025",
@@ -379,7 +403,8 @@
       "question": "2×2表のセルがa=20,b=10,c=10,d=20のオッズ比は？",
       "answer": "ad/bc=4",
       "explanation": "クロス積比。",
-      "pitfall": "オッズ比と確率の比を同一視しない。"
+      "pitfall": "オッズ比と確率の比を同一視しない。",
+      "formula_latex": "\\mathrm{OR}=\\frac{ad}{bc}"
     },
     {
       "id": "Q026",
@@ -390,7 +415,8 @@
       "question": "Cov(X,Y)=6、SD(X)=2、SD(Y)=5の相関係数は？",
       "answer": "0.6",
       "explanation": "共分散÷標準偏差の積。",
-      "pitfall": "相関から因果関係を結論しない。"
+      "pitfall": "相関から因果関係を結論しない。",
+      "formula_latex": "\\rho=\\frac{\\mathrm{Cov}(X,Y)}{\\sigma_X\\sigma_Y}"
     },
     {
       "id": "Q027",
@@ -401,7 +427,8 @@
       "question": "Beta(2,3)の平均は？",
       "answer": "2/5=0.4",
       "explanation": "α/(α+β)。",
-      "pitfall": "分母はαβではなくα+β。"
+      "pitfall": "分母はαβではなくα+β。",
+      "formula_latex": "E[X]=\\frac{\\alpha}{\\alpha+\\beta}"
     },
     {
       "id": "Q028",
@@ -412,7 +439,8 @@
       "question": "不偏推定量Tの分散の下限を情報量I(θ)で表せ。",
       "answer": "Var(T)≥1/I(θ)（正則条件下）",
       "explanation": "パラメータθ自身の不偏推定の場合。",
-      "pitfall": "不偏性・正則条件を確認せず適用しない。"
+      "pitfall": "不偏性・正則条件を確認せず適用しない。",
+      "formula_latex": "\\mathrm{Var}(\\hat\\theta)\\geq\\frac1{I(\\theta)}"
     },
     {
       "id": "Q029",
@@ -423,7 +451,8 @@
       "question": "独立な5検定にBonferroni法で家族内有意水準0.05を割り当てると各検定は？",
       "answer": "0.01",
       "explanation": "α/m。",
-      "pitfall": "問題文が独立と述べても、Bonferroniの成立条件に独立性は不要。"
+      "pitfall": "問題文が独立と述べても、Bonferroniの成立条件に独立性は不要。",
+      "formula_latex": "\\alpha_{\\mathrm{each}}=\\frac\\alpha m"
     },
     {
       "id": "Q030",
@@ -434,7 +463,8 @@
       "question": "K-meansが最小化する代表的な目的関数は？",
       "answer": "各点と所属クラスタ中心との平方距離和",
       "explanation": "クラスタ内平方和。",
-      "pitfall": "Kは事前に指定する。外れ値や尺度の影響に注意。"
+      "pitfall": "Kは事前に指定する。外れ値や尺度の影響に注意。",
+      "formula_latex": "\\min_{\\{C_k,\\mu_k\\}}\\sum_k\\sum_{i\\in C_k}\\lVert x_i-\\mu_k\\rVert^2"
     },
     {
       "id": "Q031",
@@ -445,7 +475,8 @@
       "question": "E[X|Y]=2Y+1、E[Y]=3ならE[X]は？",
       "answer": "7",
       "explanation": "反復期待値の法則。",
-      "pitfall": "E[X|Y]自体は通常Yの関数（確率変数）。"
+      "pitfall": "E[X|Y]自体は通常Yの関数（確率変数）。",
+      "formula_latex": "E[E[X\\mid Y]]=E[X]"
     },
     {
       "id": "Q032",
@@ -456,7 +487,8 @@
       "question": "2変量正規分布で共分散0ならX,Yは独立か？",
       "answer": "独立である",
       "explanation": "一般分布では無相関と独立は同値でない。",
-      "pitfall": "『同時に正規分布に従う』ことが重要で、周辺が正規なだけでは不十分。"
+      "pitfall": "『同時に正規分布に従う』ことが重要で、周辺が正規なだけでは不十分。",
+      "formula_latex": "(X,Y)\\text{が同時正規},\\ \\mathrm{Cov}(X,Y)=0\\Rightarrow X\\perp Y"
     },
     {
       "id": "Q033",
@@ -467,7 +499,8 @@
       "question": "平均μ、分散σ²のiid標本で√n(X̄−μ)/σの極限分布は？",
       "answer": "N(0,1)",
       "explanation": "有限分散等の条件下。",
-      "pitfall": "√nの倍率と、分母が標準偏差σであることを確認。"
+      "pitfall": "√nの倍率と、分母が標準偏差σであることを確認。",
+      "formula_latex": "\\frac{\\sqrt n(\\overline X-\\mu)}{\\sigma}\\xrightarrow{d}N(0,1)"
     },
     {
       "id": "Q034",
@@ -478,7 +511,8 @@
       "question": "3独立群で正規性を仮定しない位置の比較に用いる順位検定は？",
       "answer": "クラスカル・ウォリス検定",
       "explanation": "独立群のノンパラメトリック検定。",
-      "pitfall": "分布形が異なる場合に『中央値だけの検定』と断定しない。"
+      "pitfall": "分布形が異なる場合に『中央値だけの検定』と断定しない。",
+      "formula_latex": "H=\\frac{12}{N(N+1)}\\sum_{j=1}^k\\frac{R_j^2}{n_j}-3(N+1)"
     },
     {
       "id": "Q035",
@@ -489,7 +523,8 @@
       "question": "弱定常系列のラグ0の自己相関ρ(0)は？",
       "answer": "1",
       "explanation": "自己共分散γ(0)による正規化。",
-      "pitfall": "自己相関は分散0の定数系列では定義できない。"
+      "pitfall": "自己相関は分散0の定数系列では定義できない。",
+      "formula_latex": "\\rho(k)=\\frac{\\gamma(k)}{\\gamma(0)},\\quad\\rho(0)=1"
     },
     {
       "id": "Q036",
@@ -500,7 +535,8 @@
       "question": "Xn→d N(0,1)、Yn→p 2のときXn/Ynの極限分布は？",
       "answer": "N(0,1/4)",
       "explanation": "定数への確率収束と商。",
-      "pitfall": "標準偏差が1/2、分散が1/4。"
+      "pitfall": "標準偏差が1/2、分散が1/4。",
+      "formula_latex": "X_n\\xrightarrow d X,\\ Y_n\\xrightarrow p c\\neq0\\Rightarrow X_n/Y_n\\xrightarrow d X/c"
     },
     {
       "id": "Q037",
@@ -511,7 +547,8 @@
       "question": "自由度νのt分布がν→∞で収束する分布は？",
       "answer": "N(0,1)",
       "explanation": "正規分布に近づく。",
-      "pitfall": "自由度と標本数の関係は検定設計による。"
+      "pitfall": "自由度と標本数の関係は検定設計による。",
+      "formula_latex": "T_\\nu=\\frac{Z}{\\sqrt{U/\\nu}}\\xrightarrow[\\nu\\to\\infty]{d}N(0,1)"
     },
     {
       "id": "Q038",
@@ -522,7 +559,8 @@
       "question": "√n(θ̂−θ)→d N(0,V)なら√n(g(θ̂)−g(θ))の漸近分散は？",
       "answer": "[g'(θ)]²V",
       "explanation": "gが微分可能な場合。",
-      "pitfall": "g'(θ)=0では一次デルタ法だけでは不十分な場合がある。"
+      "pitfall": "g'(θ)=0では一次デルタ法だけでは不十分な場合がある。",
+      "formula_latex": "\\sqrt n\\{g(\\hat\\theta)-g(\\theta)\\}\\xrightarrow d N(0,[g'(\\theta)]^2V)"
     },
     {
       "id": "Q039",
@@ -533,7 +571,8 @@
       "question": "ロジット=−1+0.5x。xが2増加するとオッズは何倍？",
       "answer": "e^1≈2.718倍",
       "explanation": "係数×変化量を指数変換。",
-      "pitfall": "係数をそのまま確率の増分と解釈しない。"
+      "pitfall": "係数をそのまま確率の増分と解釈しない。",
+      "formula_latex": "\\log\\frac p{1-p}=\\beta_0+\\beta_1x"
     },
     {
       "id": "Q040",
@@ -544,7 +583,8 @@
       "question": "対数尤度最大値−20、パラメータ数3のAICは？",
       "answer": "46",
       "explanation": "AIC=−2logL+2k。",
-      "pitfall": "パラメータ数の罰則は2kで、標本数の対数ではない。"
+      "pitfall": "パラメータ数の罰則は2kで、標本数の対数ではない。",
+      "formula_latex": "\\mathrm{AIC}=-2\\log L(\\hat\\theta)+2k"
     },
     {
       "id": "Q041",
@@ -555,7 +595,8 @@
       "question": "2状態推移行列[[0.8,0.2],[0.3,0.7]]の定常分布は？",
       "answer": "(0.6,0.4)",
       "explanation": "πP=πを解く。",
-      "pitfall": "定常分布と、初期状態からの有限ステップの分布を混同しない。"
+      "pitfall": "定常分布と、初期状態からの有限ステップの分布を混同しない。",
+      "formula_latex": "\\boldsymbol\\pi P=\\boldsymbol\\pi,\\quad\\sum_i\\pi_i=1"
     },
     {
       "id": "Q042",
@@ -566,7 +607,8 @@
       "question": "AR(1): Xt=0.5Xt−1+εt が定常ならラグ1自己相関は？",
       "answer": "0.5",
       "explanation": "AR(1)のρ(k)=φ^k。",
-      "pitfall": "係数φは一般の非定常AR(1)で自己相関と同一とは限らない。"
+      "pitfall": "係数φは一般の非定常AR(1)で自己相関と同一とは限らない。",
+      "formula_latex": "\\rho(k)=\\phi^k\\quad(|\\phi|<1)"
     },
     {
       "id": "Q043",
@@ -577,7 +619,8 @@
       "question": "n=100、k=2、logL=−30のBICは？",
       "answer": "60+2ln(100)≈69.21",
       "explanation": "BIC=−2logL+kln n。",
-      "pitfall": "自然対数log nを使う。"
+      "pitfall": "自然対数log nを使う。",
+      "formula_latex": "\\mathrm{BIC}=-2\\log L(\\hat\\theta)+k\\log n"
     },
     {
       "id": "Q044",
@@ -588,7 +631,8 @@
       "question": "n個の観測から通常の非パラメトリックbootstrap標本を作る方法は？",
       "answer": "復元抽出でn個選ぶ",
       "explanation": "元標本の経験分布から再標本化。",
-      "pitfall": "非復元抽出だと元標本と同じ集合になり、通常のbootstrapにならない。"
+      "pitfall": "非復元抽出だと元標本と同じ集合になり、通常のbootstrapにならない。",
+      "formula_latex": "X_1^*,\\ldots,X_n^*\\overset{\\mathrm{iid}}{\\sim}\\widehat F_n"
     },
     {
       "id": "Q045",
@@ -599,7 +643,8 @@
       "question": "X→Z←YのときZは何と呼ばれ、Zで条件付けると何が起こりうるか？",
       "answer": "コライダー。条件付けによりXとYに見かけの関連が生じうる。",
       "explanation": "コライダーバイアス。",
-      "pitfall": "『何でも調整すればよい』は誤り。"
+      "pitfall": "『何でも調整すればよい』は誤り。",
+      "formula_latex": "X\\rightarrow Z\\leftarrow Y"
     },
     {
       "id": "Q046",
@@ -610,7 +655,8 @@
       "question": "独立な標準正規変数Z1,Z2,Z3の平方和の分布は？",
       "answer": "自由度3のχ²分布",
       "explanation": "標準正規の平方和。",
-      "pitfall": "正規変数の和ではなく平方和。"
+      "pitfall": "正規変数の和ではなく平方和。",
+      "formula_latex": "\\sum_{i=1}^{\\nu}Z_i^2\\sim\\chi_\\nu^2"
     },
     {
       "id": "Q047",
@@ -621,7 +667,8 @@
       "question": "EM法のEステップで計算する量は？",
       "answer": "現パラメータの下での完全データ対数尤度の条件付き期待値",
       "explanation": "欠測データ・潜在変数の期待値を扱う。",
-      "pitfall": "Eステップで欠測値を必ず一点補完するわけではない。"
+      "pitfall": "Eステップで欠測値を必ず一点補完するわけではない。",
+      "formula_latex": "Q(\\theta\\mid\\theta^{(t)})=E[\\log p(X,Z\\mid\\theta)\\mid X,\\theta^{(t)}]"
     },
     {
       "id": "Q048",
@@ -632,7 +679,8 @@
       "question": "対称提案分布でのMH受容確率は？",
       "answer": "min(1,π(θ')/π(θ))",
       "explanation": "正規化定数は相殺される。",
-      "pitfall": "対称提案でない場合に提案密度の比を落とさない。"
+      "pitfall": "対称提案でない場合に提案密度の比を落とさない。",
+      "formula_latex": "\\alpha=\\min\\left(1,\\frac{\\pi(\\theta')q(\\theta\\mid\\theta')}{\\pi(\\theta)q(\\theta'\\mid\\theta)}\\right)"
     },
     {
       "id": "Q049",
@@ -643,7 +691,8 @@
       "question": "ZがXとYの共通原因であるときZを何と呼ぶか？",
       "answer": "交絡変数",
       "explanation": "適切な調整が必要となりうる。",
-      "pitfall": "交絡因子と、調整するとバイアスを生むコライダーを区別する。"
+      "pitfall": "交絡因子と、調整するとバイアスを生むコライダーを区別する。",
+      "formula_latex": "X\\leftarrow Z\\rightarrow Y"
     },
     {
       "id": "Q050",
@@ -654,7 +703,8 @@
       "question": "到着率λ=3/時間のポアソン過程で2時間の到着回数の期待値は？",
       "answer": "6",
       "explanation": "期待値λt。",
-      "pitfall": "λを期間全体の期待回数と混同せず、λtに換算する。"
+      "pitfall": "λを期間全体の期待回数と混同せず、λtに換算する。",
+      "formula_latex": "N(t)\\sim\\mathrm{Pois}(\\lambda t),\\quad E[N(t)]=\\lambda t"
     }
   ],
   "policy": "5問/日×10日分。出題順はdayに従う。問題と解答は表示上分離するが公開JSONに解答があるため技術的には閲覧可能。",
