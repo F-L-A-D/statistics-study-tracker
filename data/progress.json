@@ -1,0 +1,1469 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-10-20T23:19:00+09:00",
+  "total_questions": 116,
+  "counts": {
+    "○": 42,
+    "△": 74,
+    "×": 0
+  },
+  "topics": [
+    {
+      "id": "T001",
+      "domain": "確率と確率変数",
+      "name": "条件付き確率",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T002",
+      "domain": "確率と確率変数",
+      "name": "独立性",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T003",
+      "domain": "確率と確率変数",
+      "name": "ベイズの定理",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T004",
+      "domain": "確率と確率変数",
+      "name": "同時分布",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T005",
+      "domain": "確率と確率変数",
+      "name": "周辺分布",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T006",
+      "domain": "確率と確率変数",
+      "name": "条件付き分布",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T007",
+      "domain": "確率と確率変数",
+      "name": "期待値",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T008",
+      "domain": "確率と確率変数",
+      "name": "分散",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T009",
+      "domain": "確率と確率変数",
+      "name": "共分散",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T010",
+      "domain": "確率と確率変数",
+      "name": "相関係数",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T011",
+      "domain": "確率と確率変数",
+      "name": "条件付き期待値",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T012",
+      "domain": "確率と確率変数",
+      "name": "モーメント母関数",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T013",
+      "domain": "確率と確率変数",
+      "name": "確率母関数",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T014",
+      "domain": "確率と確率変数",
+      "name": "ヤコビアン",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T015",
+      "domain": "確率と確率変数",
+      "name": "多変量変数変換",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T016",
+      "domain": "確率と確率変数",
+      "name": "大数の法則",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T017",
+      "domain": "確率と確率変数",
+      "name": "中心極限定理",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T018",
+      "domain": "確率と確率変数",
+      "name": "収束概念",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T019",
+      "domain": "確率と確率変数",
+      "name": "連続写像定理",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T020",
+      "domain": "確率と確率変数",
+      "name": "スルツキーの補題",
+      "status": "○",
+      "level": "基本",
+      "evidence": "116"
+    },
+    {
+      "id": "T021",
+      "domain": "確率と確率変数",
+      "name": "デルタ法",
+      "status": "○",
+      "level": "基本",
+      "evidence": "既往履歴"
+    },
+    {
+      "id": "T022",
+      "domain": "確率分布",
+      "name": "ベルヌーイ分布",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T023",
+      "domain": "確率分布",
+      "name": "二項分布",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T024",
+      "domain": "確率分布",
+      "name": "超幾何分布",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T025",
+      "domain": "確率分布",
+      "name": "ポアソン分布",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T026",
+      "domain": "確率分布",
+      "name": "幾何分布",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T027",
+      "domain": "確率分布",
+      "name": "負の二項分布",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T028",
+      "domain": "確率分布",
+      "name": "多項分布",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T029",
+      "domain": "確率分布",
+      "name": "一様分布",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T030",
+      "domain": "確率分布",
+      "name": "正規分布",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T031",
+      "domain": "確率分布",
+      "name": "指数分布",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T032",
+      "domain": "確率分布",
+      "name": "ガンマ分布",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T033",
+      "domain": "確率分布",
+      "name": "ベータ分布",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T034",
+      "domain": "確率分布",
+      "name": "コーシー分布",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T035",
+      "domain": "確率分布",
+      "name": "対数正規分布",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T036",
+      "domain": "確率分布",
+      "name": "多変量正規分布",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T037",
+      "domain": "確率分布",
+      "name": "t分布",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T038",
+      "domain": "確率分布",
+      "name": "カイ二乗分布",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T039",
+      "domain": "確率分布",
+      "name": "F分布",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T040",
+      "domain": "推定",
+      "name": "十分統計量",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T041",
+      "domain": "推定",
+      "name": "順序統計量",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T042",
+      "domain": "推定",
+      "name": "最尤法",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T043",
+      "domain": "推定",
+      "name": "モーメント法",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T044",
+      "domain": "推定",
+      "name": "最小二乗法",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T045",
+      "domain": "推定",
+      "name": "不偏性",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T046",
+      "domain": "推定",
+      "name": "一致性",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T047",
+      "domain": "推定",
+      "name": "有効性",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T048",
+      "domain": "推定",
+      "name": "クラーメル・ラオの不等式",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T049",
+      "domain": "推定",
+      "name": "フィッシャー情報量",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T050",
+      "domain": "推定",
+      "name": "漸近正規性",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T051",
+      "domain": "推定",
+      "name": "区間推定",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T052",
+      "domain": "推定",
+      "name": "母比率の信頼区間",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T053",
+      "domain": "推定",
+      "name": "分散比の信頼区間",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T054",
+      "domain": "検定",
+      "name": "p値",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T055",
+      "domain": "検定",
+      "name": "第一種の過誤",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T056",
+      "domain": "検定",
+      "name": "第二種の過誤",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T057",
+      "domain": "検定",
+      "name": "検出力",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T058",
+      "domain": "検定",
+      "name": "標本サイズ設計",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T059",
+      "domain": "検定",
+      "name": "ネイマン・ピアソンの補題",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T060",
+      "domain": "検定",
+      "name": "ワルド検定",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T061",
+      "domain": "検定",
+      "name": "スコア検定",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T062",
+      "domain": "検定",
+      "name": "尤度比検定",
+      "status": "○",
+      "level": "基本",
+      "evidence": "既往履歴"
+    },
+    {
+      "id": "T063",
+      "domain": "検定",
+      "name": "母平均の検定",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T064",
+      "domain": "検定",
+      "name": "母分散の検定",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T065",
+      "domain": "検定",
+      "name": "二標本検定",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T066",
+      "domain": "検定",
+      "name": "適合度検定",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T067",
+      "domain": "検定",
+      "name": "多重比較",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T068",
+      "domain": "検定",
+      "name": "ウィルコクソン検定",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T069",
+      "domain": "検定",
+      "name": "クラスカル・ウォリス検定",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T070",
+      "domain": "マルコフ連鎖と確率過程",
+      "name": "推移確率",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T071",
+      "domain": "マルコフ連鎖と確率過程",
+      "name": "推移行列",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T072",
+      "domain": "マルコフ連鎖と確率過程",
+      "name": "既約性",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T073",
+      "domain": "マルコフ連鎖と確率過程",
+      "name": "定常分布",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T074",
+      "domain": "マルコフ連鎖と確率過程",
+      "name": "ランダムウォーク",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T075",
+      "domain": "マルコフ連鎖と確率過程",
+      "name": "ポアソン過程",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T076",
+      "domain": "マルコフ連鎖と確率過程",
+      "name": "ブラウン運動",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T077",
+      "domain": "回帰分析",
+      "name": "重回帰",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T078",
+      "domain": "回帰分析",
+      "name": "決定係数",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T079",
+      "domain": "回帰分析",
+      "name": "変数選択",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T080",
+      "domain": "回帰分析",
+      "name": "残差分析",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T081",
+      "domain": "回帰分析",
+      "name": "一般化最小二乗法",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T082",
+      "domain": "回帰分析",
+      "name": "多重共線性",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T083",
+      "domain": "回帰分析",
+      "name": "L1正則化",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T084",
+      "domain": "回帰分析",
+      "name": "L2正則化",
+      "status": "○",
+      "level": "基本",
+      "evidence": "113"
+    },
+    {
+      "id": "T085",
+      "domain": "回帰分析",
+      "name": "Mallows Cp",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T086",
+      "domain": "回帰分析",
+      "name": "てこ比",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T087",
+      "domain": "回帰分析",
+      "name": "Cookの距離",
+      "status": "○",
+      "level": "基本",
+      "evidence": "114"
+    },
+    {
+      "id": "T088",
+      "domain": "回帰分析",
+      "name": "ロジスティック回帰",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T089",
+      "domain": "回帰分析",
+      "name": "プロビット回帰",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T090",
+      "domain": "回帰分析",
+      "name": "ポアソン回帰",
+      "status": "○",
+      "level": "基本",
+      "evidence": "既往履歴"
+    },
+    {
+      "id": "T091",
+      "domain": "回帰分析",
+      "name": "GLM",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T092",
+      "domain": "回帰分析",
+      "name": "比例ハザードモデル",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T093",
+      "domain": "回帰分析",
+      "name": "カプラン・マイヤー推定量",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T094",
+      "domain": "分散分析と実験計画法",
+      "name": "一元配置分散分析",
+      "status": "学習履歴あり",
+      "level": "未確認",
+      "evidence": "既往履歴"
+    },
+    {
+      "id": "T095",
+      "domain": "分散分析と実験計画法",
+      "name": "二元配置分散分析",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T096",
+      "domain": "分散分析と実験計画法",
+      "name": "分散分析表",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T097",
+      "domain": "分散分析と実験計画法",
+      "name": "F検定",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T098",
+      "domain": "分散分析と実験計画法",
+      "name": "交互作用",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T099",
+      "domain": "分散分析と実験計画法",
+      "name": "ブロック化",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T100",
+      "domain": "分散分析と実験計画法",
+      "name": "乱塊法",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T101",
+      "domain": "分散分析と実験計画法",
+      "name": "一部実施要因計画",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T102",
+      "domain": "分散分析と実験計画法",
+      "name": "直交配列",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T103",
+      "domain": "標本調査",
+      "name": "有限母集団",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T104",
+      "domain": "標本調査",
+      "name": "有限修正",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T105",
+      "domain": "標本調査",
+      "name": "単純無作為抽出",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T106",
+      "domain": "標本調査",
+      "name": "層化抽出",
+      "status": "○",
+      "level": "基本",
+      "evidence": "既往履歴"
+    },
+    {
+      "id": "T107",
+      "domain": "標本調査",
+      "name": "集落抽出",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T108",
+      "domain": "標本調査",
+      "name": "系統抽出",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T109",
+      "domain": "標本調査",
+      "name": "多段抽出",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T110",
+      "domain": "標本調査",
+      "name": "抽出法別の分散推定",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T111",
+      "domain": "多変量解析",
+      "name": "主成分分析",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T112",
+      "domain": "多変量解析",
+      "name": "寄与率",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T113",
+      "domain": "多変量解析",
+      "name": "線形判別分析",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T114",
+      "domain": "多変量解析",
+      "name": "二次判別分析",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T115",
+      "domain": "多変量解析",
+      "name": "SVM",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T116",
+      "domain": "多変量解析",
+      "name": "ROC・AUC",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T117",
+      "domain": "多変量解析",
+      "name": "階層クラスタリング",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T118",
+      "domain": "多変量解析",
+      "name": "K-means",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T119",
+      "domain": "多変量解析",
+      "name": "因子分析",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T120",
+      "domain": "多変量解析",
+      "name": "因子回転",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T121",
+      "domain": "多変量解析",
+      "name": "構造方程式モデル",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T122",
+      "domain": "多変量解析",
+      "name": "操作変数",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T123",
+      "domain": "多変量解析",
+      "name": "多次元尺度法",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T124",
+      "domain": "多変量解析",
+      "name": "正準相関分析",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T125",
+      "domain": "多変量解析",
+      "name": "対応分析",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T126",
+      "domain": "多変量解析",
+      "name": "数量化法",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T127",
+      "domain": "時系列解析",
+      "name": "自己相関",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T128",
+      "domain": "時系列解析",
+      "name": "偏自己相関",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T129",
+      "domain": "時系列解析",
+      "name": "スペクトル解析",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T130",
+      "domain": "時系列解析",
+      "name": "ARモデル",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T131",
+      "domain": "時系列解析",
+      "name": "MAモデル",
+      "status": "○",
+      "level": "基本",
+      "evidence": "既往履歴"
+    },
+    {
+      "id": "T132",
+      "domain": "時系列解析",
+      "name": "ARMAモデル",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T133",
+      "domain": "時系列解析",
+      "name": "ARIMAモデル",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T134",
+      "domain": "時系列解析",
+      "name": "定常性",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T135",
+      "domain": "時系列解析",
+      "name": "階差",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T136",
+      "domain": "時系列解析",
+      "name": "状態空間モデル",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T137",
+      "domain": "時系列解析",
+      "name": "DW比",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T138",
+      "domain": "分割表",
+      "name": "オッズ比",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T139",
+      "domain": "分割表",
+      "name": "フィッシャーの正確検定",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T140",
+      "domain": "分割表",
+      "name": "連関係数",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T141",
+      "domain": "分割表",
+      "name": "残差分析（分割表）",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T142",
+      "domain": "分割表",
+      "name": "対数線形モデル",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T143",
+      "domain": "分割表",
+      "name": "条件付き独立モデル",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T144",
+      "domain": "不完全データ",
+      "name": "MCAR",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T145",
+      "domain": "不完全データ",
+      "name": "MAR",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T146",
+      "domain": "不完全データ",
+      "name": "MNAR",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T147",
+      "domain": "不完全データ",
+      "name": "完全ケース分析",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T148",
+      "domain": "不完全データ",
+      "name": "単一補完",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T149",
+      "domain": "不完全データ",
+      "name": "多重代入",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T150",
+      "domain": "不完全データ",
+      "name": "EMアルゴリズム",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T151",
+      "domain": "モデル選択",
+      "name": "AIC",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T152",
+      "domain": "モデル選択",
+      "name": "BIC",
+      "status": "○",
+      "level": "基本",
+      "evidence": "115"
+    },
+    {
+      "id": "T153",
+      "domain": "モデル選択",
+      "name": "交差検証",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T154",
+      "domain": "ベイズ法",
+      "name": "事前分布",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T155",
+      "domain": "ベイズ法",
+      "name": "事後分布",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T156",
+      "domain": "ベイズ法",
+      "name": "共役事前分布",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T157",
+      "domain": "ベイズ法",
+      "name": "事後推定",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T158",
+      "domain": "ベイズ法",
+      "name": "MH・メトロポリス法",
+      "status": "○",
+      "level": "基本",
+      "evidence": "再演習"
+    },
+    {
+      "id": "T159",
+      "domain": "ベイズ法",
+      "name": "MCMC収束診断",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T160",
+      "domain": "ベイズ法",
+      "name": "ギブスサンプリング",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T161",
+      "domain": "ベイズ法",
+      "name": "階層ベイズモデル",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T162",
+      "domain": "シミュレーション",
+      "name": "乱数生成",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T163",
+      "domain": "シミュレーション",
+      "name": "採択棄却法",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T164",
+      "domain": "シミュレーション",
+      "name": "モンテカルロ法",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T165",
+      "domain": "シミュレーション",
+      "name": "ジャックナイフ法",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T166",
+      "domain": "シミュレーション",
+      "name": "ブートストラップ法",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T167",
+      "domain": "統計的因果推論",
+      "name": "DAG",
+      "status": "△",
+      "level": "入門",
+      "evidence": "107"
+    },
+    {
+      "id": "T168",
+      "domain": "統計的因果推論",
+      "name": "交絡",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T169",
+      "domain": "統計的因果推論",
+      "name": "バックドア経路",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T170",
+      "domain": "統計的因果推論",
+      "name": "コライダー",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T171",
+      "domain": "統計的因果推論",
+      "name": "d-separation",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T172",
+      "domain": "統計的因果推論",
+      "name": "バックドア基準",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T173",
+      "domain": "統計的因果推論",
+      "name": "フロントドア基準",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T174",
+      "domain": "統計的因果推論",
+      "name": "介入",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T175",
+      "domain": "統計的因果推論",
+      "name": "ATE",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T176",
+      "domain": "統計的因果推論",
+      "name": "交絡調整によるATE推定",
+      "status": "○",
+      "level": "基本",
+      "evidence": "112"
+    },
+    {
+      "id": "T177",
+      "domain": "統計的因果推論",
+      "name": "直接効果",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    },
+    {
+      "id": "T178",
+      "domain": "統計的因果推論",
+      "name": "間接効果",
+      "status": "未確認",
+      "level": "未確認",
+      "evidence": ""
+    }
+  ],
+  "history": [
+    {
+      "question_id": "112",
+      "topic_id": "T176",
+      "status": "○",
+      "level": "基本"
+    },
+    {
+      "question_id": "113",
+      "topic_id": "T084",
+      "status": "○",
+      "level": "基本"
+    },
+    {
+      "question_id": "114",
+      "topic_id": "T087",
+      "status": "○",
+      "level": "基本"
+    },
+    {
+      "question_id": "115",
+      "topic_id": "T152",
+      "status": "○",
+      "level": "基本"
+    },
+    {
+      "question_id": "116",
+      "topic_id": "T020",
+      "status": "○",
+      "level": "基本"
+    }
+  ],
+  "note": "過去116問の個別履歴は未復元。小論点未確認は未学習を意味しない。再演習は既存問題評価の更新。"
+}
