@@ -15,10 +15,10 @@ const jstDay=()=>new Intl.DateTimeFormat("en-CA",{timeZone:"Asia/Tokyo",year:"nu
 const epoch=s=>Date.parse(s+"T00:00:00+09:00");
 const days=(a,b)=>Math.round((epoch(b)-epoch(a))/86400000);
 const dateAdd=(s,n)=>new Date(epoch(s)+n*86400000).toLocaleDateString("en-CA",{timeZone:"Asia/Tokyo"});
-const status=t=>["○","△","×"].includes(t.status)?t.status:"未確認";
+let taxonomy=null;const status=t=>["○","△","×"].includes(t.status)?t.status:"未確認";
 const $=id=>document.getElementById(id);
 function segments(a,b,c,d){const n=a+b+c+d||1;return '<div class="seg-ok" style="width:'+(a/n*100)+'%"></div><div class="seg-mid" style="width:'+(b/n*100)+'%"></div><div class="seg-bad" style="width:'+(c/n*100)+'%"></div><div class="seg-rest" style="width:'+(d/n*100)+'%"></div>'}
-function render(d){const today=jstDay(),ts=d.topics||[],c=d.counts||{},done=ts.filter(t=>status(t)!=="未確認").length,rest=ts.length-done;
+function render(d){const today=jstDay(),raw=d.topics||[],ts=taxonomy?raw.filter(t=>taxonomy.learning_unit_ids.includes(t.id)):raw,c=d.counts||{},done=ts.filter(t=>status(t)!=="未確認").length,rest=ts.length-done;
 const until=Math.max(0,days(today,TARGET)),span=days(START,TARGET),elapsed=Math.max(0,Math.min(span,days(START,today))),percent=Math.round(elapsed/span*100);
 const cards=[["累計解答数",d.total_questions||0,"履歴の確定済み集計"],["○ 正解",c["○"]||0,"△ "+(c["△"]||0)+" / × "+(c["×"]||0)],["確認済み論点",done+"/"+ts.length,"履歴未確認は未学習とは限らない"],["目標日まで",until+"日","2027年1月16日"]];
 $("cards").innerHTML=cards.map(([label,num,detail])=>'<div class="card"><div class="label">'+esc(label)+'</div><div class="number">'+esc(num)+'</div><div class="detail">'+esc(detail)+'</div></div>').join("");
@@ -33,9 +33,9 @@ const dates=Object.keys(daily),start=dateAdd(today,-90);let html="",tracked=0;fo
 $("heat").innerHTML=html;let streak=0;let day=today;if(!daily[day])day=dateAdd(day,-1);while(daily[day]){streak++;day=dateAdd(day,-1)}
 $("streak").textContent="記録上の連続学習 "+streak+" 日";$("activityCount").textContent="日付付き記録 "+dates.length+" 日";
 $("historyNote").textContent=dates.length?"日付付きの問題履歴のみで集計しています。未記録日は未学習と断定できません。":"既存の116問には解答日が保存されていません。そのため過去の連続学習日数は復元できません。今後、採点時にdate（JSTのYYYY-MM-DD）を保存するとヒートマップに反映されます。";
-$("notice").textContent="データ更新: "+(d.updated_at||"不明")+" ／ 2027年版の管理論点は暫定 "+ts.length+" 件（公式範囲との最終照合前）";$("sync").textContent="GitHub同期データ";
+$("notice").textContent="データ更新: "+(d.updated_at||"不明")+" ／ 学習管理単元 "+ts.length+" 件（知識項目239件を親子統合した管理体系）";$("sync").textContent="GitHub同期データ";
 }
-async function load(){try{const res=await fetch("./data/progress.json?t="+Date.now(),{cache:"no-store"});if(!res.ok)throw Error("HTTP "+res.status);const d=await res.json();if(!Array.isArray(d.topics))throw Error("不正なJSON");render(d)}catch(e){$("sync").textContent="取得失敗";$("notice").classList.add("error");$("notice").textContent="進捗データを読み込めませんでした: "+e.message}}
+async function load(){try{const res=await fetch("./data/progress.json?t="+Date.now(),{cache:"no-store"});if(!res.ok)throw Error("HTTP "+res.status);const d=await res.json();try{const tx=await fetch("./data/taxonomy.json?t="+Date.now(),{cache:"no-store"});if(tx.ok)taxonomy=await tx.json()}catch(e){}if(!Array.isArray(d.topics))throw Error("不正なJSON");render(d)}catch(e){$("sync").textContent="取得失敗";$("notice").classList.add("error");$("notice").textContent="進捗データを読み込めませんでした: "+e.message}}
 load();
 
 </script></body></html>
