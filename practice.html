@@ -14,7 +14,7 @@ function lectureMarkup(q){
  '<a href="./lectures.html?topic='+encodeURIComponent(q.topic_id)+'">講義ライブラリで再閲覧 →</a></div>';
 }
 function afterGradeMarkup(q,known){
- return '<details class="after-grade"><summary>'+(known?'採点後の解説・補講を開く':'採点後の模範解答・解説を開く')+'</summary><p class="sub">ChatGPTでの採点完了後に確認してください。このページでは採点済みか自動判定できません。</p>'+ (known?lectureMarkup(q):"")+'<p><strong>正答：</strong><span class="math-prose">'+esc(q.answer)+'</span></p><p><strong>解説：</strong><span class="math-prose">'+esc(q.explanation)+'</span></p></details>';
+ return '<details class="after-grade"><summary>'+(known?'採点後の解説・補講を開く':'採点後の模範解答・解説を開く')+'</summary><p class="sub">ChatGPTでの採点完了後に確認してください。このページでは採点済みか自動判定できません。</p>'+ (known?lectureMarkup(q):"")+'<div><strong>正答：</strong><div class="lecture-body">'+LectureView.textBlocks(q.answer)+'</div></div><div><strong>解説：</strong><div class="lecture-body">'+LectureView.textBlocks(q.explanation)+'</div></div></details>';
 }
 function currentQuestions(){const s=queue?.sets.find(s=>s.set_id===$("day").value);return s?s.question_ids.map(id=>bank.questions.find(q=>q.id===id)).filter(Boolean):[]}
 function answerKey(setId,id){return setId+":"+id}
@@ -33,7 +33,7 @@ function render(setId){
   return '<article class="q"><div class="sub">'+esc(q.id)+' · '+esc(q.topic_id)+' · '+esc(q.level)+'</div><h3>'+esc(q.topic_name)+'</h3>'+
   '<div class="study-flow '+(state.known?'review':'new')+'"><strong>'+(state.known?'既習｜演習 → ChatGPT採点 → 解説・補講':'新規扱い｜初回講義 → 演習 → ChatGPT採点')+'</strong>'+esc(state.reason)+(state.known?'（現在の評価：'+esc(state.status)+'）':'')+'</div>'+
   (state.known?'':lectureMarkup(q))+
-  '<p class="question"><strong>問題</strong><span class="math-prose" style="display:block">'+esc(q.question)+'</span></p>'+
+  '<div class="question"><strong>問題</strong><div class="lecture-body">'+LectureView.textBlocks(q.question)+'</div></div>'+
   '<label class="answer-label" for="answer-'+esc(q.id)+'">あなたの解答</label><textarea id="answer-'+esc(q.id)+'" data-answer-id="'+esc(q.id)+'" placeholder="この問題の解答を入力してください（未回答のままでもコピー可能）"></textarea>'+
   '<div class="actions"><button type="button" data-id="'+esc(q.id)+'">この1問の解答をコピー</button></div>'+
   afterGradeMarkup(q,state.known)+'</article>';
