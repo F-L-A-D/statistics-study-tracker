@@ -1,0 +1,209 @@
+{
+  "schema_version": 1,
+  "queue_version": 1,
+  "updated_at": "2026-10-21",
+  "target_pending_sets": 10,
+  "questions_per_set": 5,
+  "refill_policy": {
+    "new_target": 3,
+    "review_target": 2,
+    "review_priority": [
+      "×",
+      "△",
+      "○"
+    ],
+    "review_shortfall": "new",
+    "consume_requires": "all_five_graded_and_committed_with_replacement",
+    "uniqueness": "unique_question_id",
+    "ordering": "sequence"
+  },
+  "migration": {
+    "source": "lesson-bank.json days 1-10",
+    "method": "explicit validated enrollment; not previously a queue",
+    "legacy_question_count": 50,
+    "legacy_progress_total": 116,
+    "legacy_progress_history_records": 5
+  },
+  "sets": [
+    {
+      "set_id": "S0001",
+      "sequence": 1,
+      "status": "pending",
+      "origin": "migrated_legacy",
+      "generated_at": null,
+      "enqueued_at": "2026-10-21",
+      "consumed_at": null,
+      "question_ids": [
+        "Q001",
+        "Q002",
+        "Q003",
+        "Q004",
+        "Q005"
+      ],
+      "graded_question_ids": [],
+      "consumption_id": null
+    },
+    {
+      "set_id": "S0002",
+      "sequence": 2,
+      "status": "pending",
+      "origin": "migrated_legacy",
+      "generated_at": null,
+      "enqueued_at": "2026-10-21",
+      "consumed_at": null,
+      "question_ids": [
+        "Q006",
+        "Q007",
+        "Q008",
+        "Q009",
+        "Q010"
+      ],
+      "graded_question_ids": [],
+      "consumption_id": null
+    },
+    {
+      "set_id": "S0003",
+      "sequence": 3,
+      "status": "pending",
+      "origin": "migrated_legacy",
+      "generated_at": null,
+      "enqueued_at": "2026-10-21",
+      "consumed_at": null,
+      "question_ids": [
+        "Q011",
+        "Q012",
+        "Q013",
+        "Q014",
+        "Q015"
+      ],
+      "graded_question_ids": [],
+      "consumption_id": null
+    },
+    {
+      "set_id": "S0004",
+      "sequence": 4,
+      "status": "pending",
+      "origin": "migrated_legacy",
+      "generated_at": null,
+      "enqueued_at": "2026-10-21",
+      "consumed_at": null,
+      "question_ids": [
+        "Q016",
+        "Q017",
+        "Q018",
+        "Q019",
+        "Q020"
+      ],
+      "graded_question_ids": [],
+      "consumption_id": null
+    },
+    {
+      "set_id": "S0005",
+      "sequence": 5,
+      "status": "pending",
+      "origin": "migrated_legacy",
+      "generated_at": null,
+      "enqueued_at": "2026-10-21",
+      "consumed_at": null,
+      "question_ids": [
+        "Q021",
+        "Q022",
+        "Q023",
+        "Q024",
+        "Q025"
+      ],
+      "graded_question_ids": [],
+      "consumption_id": null
+    },
+    {
+      "set_id": "S0006",
+      "sequence": 6,
+      "status": "pending",
+      "origin": "migrated_legacy",
+      "generated_at": null,
+      "enqueued_at": "2026-10-21",
+      "consumed_at": null,
+      "question_ids": [
+        "Q026",
+        "Q027",
+        "Q028",
+        "Q029",
+        "Q030"
+      ],
+      "graded_question_ids": [],
+      "consumption_id": null
+    },
+    {
+      "set_id": "S0007",
+      "sequence": 7,
+      "status": "pending",
+      "origin": "migrated_legacy",
+      "generated_at": null,
+      "enqueued_at": "2026-10-21",
+      "consumed_at": null,
+      "question_ids": [
+        "Q031",
+        "Q032",
+        "Q033",
+        "Q034",
+        "Q035"
+      ],
+      "graded_question_ids": [],
+      "consumption_id": null
+    },
+    {
+      "set_id": "S0008",
+      "sequence": 8,
+      "status": "pending",
+      "origin": "migrated_legacy",
+      "generated_at": null,
+      "enqueued_at": "2026-10-21",
+      "consumed_at": null,
+      "question_ids": [
+        "Q036",
+        "Q037",
+        "Q038",
+        "Q039",
+        "Q040"
+      ],
+      "graded_question_ids": [],
+      "consumption_id": null
+    },
+    {
+      "set_id": "S0009",
+      "sequence": 9,
+      "status": "pending",
+      "origin": "migrated_legacy",
+      "generated_at": null,
+      "enqueued_at": "2026-10-21",
+      "consumed_at": null,
+      "question_ids": [
+        "Q041",
+        "Q042",
+        "Q043",
+        "Q044",
+        "Q045"
+      ],
+      "graded_question_ids": [],
+      "consumption_id": null
+    },
+    {
+      "set_id": "S0010",
+      "sequence": 10,
+      "status": "pending",
+      "origin": "migrated_legacy",
+      "generated_at": null,
+      "enqueued_at": "2026-10-21",
+      "consumed_at": null,
+      "question_ids": [
+        "Q046",
+        "Q047",
+        "Q048",
+        "Q049",
+        "Q050"
+      ],
+      "graded_question_ids": [],
+      "consumption_id": null
+    }
+  ]
+}
