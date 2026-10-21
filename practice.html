@@ -9,7 +9,7 @@ function learningState(q){
 }
 function lectureMarkup(q){
  const lecture=lectureBank[q.topic_id];
- if(!lecture)return '<div class="lecture"><strong>講義マスタ未公開（旧ミニ講義・暫定）</strong><p>'+esc(q.lecture||"")+'</p></div>';
+ if(!lecture)return '<div class="lecture"><strong>講義マスタ未公開（旧ミニ講義・暫定）</strong><p class="math-prose">'+esc(q.lecture||"")+'</p></div>';
  const parts=[["直感",lecture.intuition],["定義・主要公式",lecture.definition],["導出・根拠",lecture.derivation],["具体例",lecture.example],["成立条件",lecture.conditions],["典型ミス",lecture.pitfalls],["試験での判断基準",lecture.exam_criteria]];
  return '<div class="lecture"><strong>保存済み講義 · '+esc(lecture.review_status)+'</strong>'+
  (lecture.formula_latex||q.formula_latex?'<div class="formula" data-tex="'+esc(lecture.formula_latex||q.formula_latex)+'" aria-label="主要公式"></div>':'')+
