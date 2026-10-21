@@ -18,3 +18,17 @@
 - 不変条件: 未完了10セット×5問。全question_idは問題バンクに存在。consumedセットの5問は該当セットの採点試行をprogressで参照可能。既存historyや集計を再集計だけで消去しない。
 - 21時タスク: queue.jsonのpending/ready中、sequence最小のset_idを読み、practice.html?set=Sxxxx を案内する。タスクは自動補充機構ではない。
 - 注意: **現時点で自動採点・自動生成・トランザクション実行のバックエンドは未実装**。GitHub Pagesは読み取り専用。セット消費を手動で行う際も上の同一コミット手順が必須。補充問題の供給がなければ消費を保留し、不正な10セット維持を装わない。
+
+
+## SQLite教材マスタ（2026-10-21）
+- **教材の正本**: `data/curriculum.sqlite3`。教材・論点・講義を編集する際はSQLiteのテーブルを更新する。 `data/lesson-bank.json`, `data/taxonomy.json`, `data/lectures.json` はGitHub Pages用の派生物であり、直接編集しない。
+- **履歴の正本**: `data/progress.json`（SQLiteへ移行しない）。**Queue状態の正本**: `data/queue.json`。SQLiteからのビルドでこれらを上書きしない。
+- 初期移行は `python scripts/curriculum.py init`。DBが存在する場合は上書きを拒否／既存DBを保持する。
+- SQL修正後に `python scripts/curriculum.py build` で公開用JSONを生成し、`python scripts/curriculum.py verify` と `python scripts/test_queue.py` で検証する。
+- `scripts/lecture_seed.json` は **初回ブートストラップ用**。DB作成後はこのファイルを修正してもDBに自動反映されない。正式な講義改訂はSQLiteへ行う。
+- `lectures.review_status`: draft（初稿）, in_review（レビュー中）, approved（承認）, needs_revision（要改訂）。`draft` は品質保証済みの意味ではない。
+- 初期50問は削除しない。active Queueは3セット×5問。旧S0004〜S0010はbacklogとして保持（採点済み／消費済みではない）。
+- セット完了の運用: 外部採点後、5問分のquestion_id・固有attempt_id・answer・○△×をJSONファイルにまとめる。まず `python scripts/complete_set.py grades.json --dry-run` で検証、次に **Git作業ツリーがクリーンな環境** で `python scripts/complete_set.py grades.json --commit` を実行。progress.jsonとqueue.jsonを同一コミットにしてpushする。認証・接続不良またはpush失敗時は未完了としてHEADと履歴を再確認する。
+- 補充は既存問題プールから原則新規3＋復習2を選び、復習候補は×→△→○。不足時は新規で補完。検証済み問題が尽きたら明示的に停止し、SQLiteに新問を登録する必要がある。ChatGPT定時タスク単体では書き込み・補充は行われない。
+- 新規扱いの講義を演習前に表示。採点済み論点は演習後に補講欄を開く。講義閲覧だけではprogress.jsonを変更しない。
+- GitHub Actions `build-curriculum.yml` は教材更新用。初期移行時にはSQLiteと公開JSONを生成してコミットした。以後はSQLiteを編集しただけでは自動起動しないため、workflow_dispatchまたは対応するワークフローの再実行を行い、生成物のコミットを確認する。
