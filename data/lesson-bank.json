@@ -411,7 +411,7 @@
       "topic_id": "T010",
       "topic_name": "相関係数",
       "level": "基本",
-      "lecture": "ピアソン相関係数ρ=Cov(X,Y)/(SD(X)SD(Y))は線形な関連の強さと方向を表し、−1から1の範囲。共分散を標準偏差の積で割るので単位に依存しない。相関が0でも非線形な依存が残ることがある。",
+      "lecture": "ピアソン相関係数\\(\\rho=\\frac{\\operatorname{Cov}(X,Y)}{\\operatorname{SD}(X)\\operatorname{SD}(Y)}\\)は線形な関連の強さと方向を表し、−1から1の範囲。共分散を標準偏差の積で割るので単位に依存しない。相関が0でも非線形な依存が残ることがある。",
       "question": "Cov(X,Y)=6、SD(X)=2、SD(Y)=5の相関係数は？",
       "answer": "0.6",
       "explanation": "共分散÷標準偏差の積。",
