@@ -4,15 +4,15 @@
   "lectures": {
     "T001": {
       "intuition": "Bが起きたと分かった後でAの確率空間を絞り込む。",
-      "definition": "P(A|B)=P(A∩B)/P(B)。",
+      "definition": "条件付き確率は \\(P(A\\mid B)=\\frac{P(A\\cap B)}{P(B)}\\)。",
       "derivation": "Bが起こる場合だけを標本空間とみなし、その中でAも起こる割合を求める。",
-      "example": "P(A∩B)=0.12、P(B)=0.3なら0.4。",
-      "conditions": "P(B)>0が必要。",
+      "example": "\\(P(A\\cap B)=0.12\\)、\\(P(B)=0.3\\) のとき \\(P(A\\mid B)=0.12/0.3=0.4\\)。",
+      "conditions": "分母 \\(P(B)>0\\) が必要。",
       "pitfalls": "P(A|B)とP(B|A)を交換しない。",
       "exam_criteria": "条件イベントが分母、共通部分が分子。",
       "review_status": "draft",
       "review_notes": "初期生成版。数式・導出・範囲の専門レビュー未完了",
-      "revised_at": "2026-10-21T12:44:40.740814+00:00",
+      "revised_at": "2026-10-21T13:05:02.145523+00:00",
       "formula_latex": "P(A\\mid B)=\\frac{P(A\\cap B)}{P(B)}"
     },
     "T002": {
@@ -30,15 +30,15 @@
     },
     "T003": {
       "intuition": "事前確率を観測で更新する仕組み。珍しい事象の判定では検査の精度だけでなく基準率が効く。",
-      "definition": "P(A|B)=P(B|A)P(A)/P(B)。分母は全確率 P(B)=Σ_i P(B|A_i)P(A_i)。",
-      "derivation": "条件付き確率P(A∩B)=P(B|A)P(A)=P(A|B)P(B)を二通りに書き等置する。",
-      "example": "有病率0.1、感度0.8、偽陽性率0.1なら 0.08/(0.08+0.09)=8/17。",
-      "conditions": "P(B)>0。A_iは排反で全体を覆う。感度・特異度の条件付け方向に注意。",
+      "definition": "ベイズの定理は \\(P(A\\mid B)=\\frac{P(B\\mid A)P(A)}{P(B)}\\)。分母は全確率 \\(P(B)=\\sum_i P(B\\mid A_i)P(A_i)\\)。",
+      "derivation": "条件付き確率から \\(P(A\\cap B)=P(B\\mid A)P(A)=P(A\\mid B)P(B)\\) と二通りに表し、\\(P(B)>0\\) で割る。",
+      "example": "有病率 \\(0.1\\)、感度 \\(0.8\\)、偽陽性率 \\(0.1\\) なら \\(P(\\text{罹患}\\mid\\text{陽性})=\\frac{0.08}{0.08+0.09}=\\frac8{17}\\approx0.471\\)。",
+      "conditions": "\\(P(B)>0\\) が必要。\\(A_i\\) は互いに排反で全体を覆う。",
       "pitfalls": "P(陽性|罹患) と P(罹患|陽性) の取り違え。",
       "exam_criteria": "観測情報Bが与えられた事後確率なら分母に観測の全確率を置く。",
       "review_status": "draft",
       "review_notes": "初期生成版。数式・導出・範囲の専門レビュー未完了",
-      "revised_at": "2026-10-21T12:44:40.740940+00:00",
+      "revised_at": "2026-10-21T13:05:02.145266+00:00",
       "formula_latex": "P(A\\mid B)=\\frac{P(B\\mid A)P(A)}{P(B)}"
     },
     "T004": {
@@ -82,15 +82,15 @@
     },
     "T007": {
       "intuition": "値の確率による重み付き平均で、長期的な平均的水準を表す。",
-      "definition": "離散E[X]=Σ_x xP(X=x)、連続E[X]=∫xf(x)dx。線形性E[aX+bY]=aE[X]+bE[Y]。",
+      "definition": "離散変数では \\(E[X]=\\sum_x xP(X=x)\\)、連続変数では \\(E[X]=\\int_{-\\infty}^{\\infty}xf(x)\\,dx\\)。線形性 \\(E[aX+bY]=aE[X]+bE[Y]\\)。",
       "derivation": "和・積分の線形性から期待値の線形性が従う。独立性は不要。",
-      "example": "E[X]=3、E[Y]=−1ならE[2X−Y]=7。",
+      "example": "\\(E[X]=3\\)、\\(E[Y]=-1\\) なら \\(E[2X-Y]=2\\times3-(-1)=7\\)。",
       "conditions": "期待値が有限であることを確認する。",
       "pitfalls": "線形性に独立性を必要とすると思い込む。",
       "exam_criteria": "足し引きと定数倍は期待値を各項へ分配する。",
       "review_status": "draft",
       "review_notes": "初期生成版。数式・導出・範囲の専門レビュー未完了",
-      "revised_at": "2026-10-21T12:44:40.740972+00:00",
+      "revised_at": "2026-10-21T13:05:02.145663+00:00",
       "formula_latex": "E[aX+bY+c]=aE[X]+bE[Y]+c"
     },
     "T008": {
@@ -290,15 +290,15 @@
     },
     "T023": {
       "intuition": "独立な同条件の試行における成功回数を数える分布。",
-      "definition": "X~Bin(n,p)、P(X=k)=C(n,k)p^k(1-p)^(n-k)、E[X]=np、Var(X)=np(1-p)。",
-      "derivation": "成功するk箇所の選び方がC(n,k)、指定した並びの確率がp^k(1-p)^(n-k)。",
-      "example": "n=5,p=0.2で1成功なら5×0.2×0.8^4=0.4096。",
+      "definition": "\\(X\\sim\\operatorname{Bin}(n,p)\\) の確率関数は \\(P(X=k)=\\binom nk p^k(1-p)^{n-k}\\)。期待値 \\(E[X]=np\\)、分散 \\(\\operatorname{Var}(X)=np(1-p)\\)。",
+      "derivation": "指定した成功・失敗の並びの確率は \\(p^k(1-p)^{n-k}\\)。成功位置の組合せ \\(\\binom nk\\) 通りを掛ける。",
+      "example": "\\(n=5,\\ p=0.2\\) で \\(P(X=1)=\\binom51(0.2)(0.8)^4=0.4096\\)。",
       "conditions": "試行回数固定、独立、各試行の成功確率が共通。",
       "pitfalls": "復元しない抽出に安易に二項分布を使う。",
       "exam_criteria": "固定回数の成功数なら二項、成功までの回数なら幾何、非復元抽出なら超幾何を検討。",
       "review_status": "draft",
       "review_notes": "初期生成版。数式・導出・範囲の専門レビュー未完了",
-      "revised_at": "2026-10-21T12:44:40.741106+00:00",
+      "revised_at": "2026-10-21T13:05:02.145367+00:00",
       "formula_latex": "P(X=k)=\\binom nk p^k(1-p)^{n-k}"
     },
     "T024": {
@@ -316,15 +316,15 @@
     },
     "T025": {
       "intuition": "一定の率で独立に生じる稀な事象の回数を表す。",
-      "definition": "X~Pois(λ)、P(X=k)=e^(−λ)λ^k/k!、E[X]=Var(X)=λ。",
-      "derivation": "Bin(n,λ/n)においてn→∞とすると組合せ項と(1−λ/n)^nの極限からポアソン確率を得る。",
-      "example": "λ=2でゼロ件の確率はe^(−2)。",
+      "definition": "\\(X\\sim\\operatorname{Pois}(\\lambda)\\) なら \\(P(X=k)=e^{-\\lambda}\\lambda^k/k!\\)、\\(E[X]=\\operatorname{Var}(X)=\\lambda\\)。",
+      "derivation": "\\(X_n\\sim\\operatorname{Bin}(n,\\lambda/n)\\) として \\(n\\to\\infty\\) の極限をとると \\(P(X=k)=e^{-\\lambda}\\lambda^k/k!\\)。",
+      "example": "\\(\\lambda=2\\) のとき \\(P(X=0)=e^{-2}\\)。",
       "conditions": "独立な増分、単位当たり平均発生率の一定性が重要。",
       "pitfalls": "λを確率pと取り違えない。",
       "exam_criteria": "時間・面積当たり件数と平均率の指定に注目する。",
       "review_status": "draft",
       "review_notes": "初期生成版。数式・導出・範囲の専門レビュー未完了",
-      "revised_at": "2026-10-21T12:44:40.741121+00:00",
+      "revised_at": "2026-10-21T13:05:02.145557+00:00",
       "formula_latex": "P(X=k)=\\frac{e^{-\\lambda}\\lambda^k}{k!}"
     },
     "T026": {
@@ -381,15 +381,15 @@
     },
     "T030": {
       "intuition": "多数の独立した小さな要因の和の近似にも現れる鐘形の分布。",
-      "definition": "X~N(μ,σ²)、Z=(X−μ)/σ~N(0,1)。",
-      "derivation": "確率密度の変数変換でX=μ+σZとすると標準正規形になる。",
-      "example": "X~N(10,4)は標準偏差2なのでZ=(X−10)/2。",
+      "definition": "\\(X\\sim N(\\mu,\\sigma^2)\\) なら \\(Z=\\frac{X-\\mu}{\\sigma}\\sim N(0,1)\\)。",
+      "derivation": "\\(X=\\mu+\\sigma Z\\) の変数変換から標準正規分布が得られる。",
+      "example": "\\(X\\sim N(10,4)\\) なら標準偏差は2なので \\(Z=(X-10)/2\\)。",
       "conditions": "第二パラメータの表記が分散か標準偏差かを確認する。",
       "pitfalls": "N(μ,4)の4を標準偏差と勘違いする。",
       "exam_criteria": "標準化は平均との差を標準偏差で割る。",
       "review_status": "draft",
       "review_notes": "初期生成版。数式・導出・範囲の専門レビュー未完了",
-      "revised_at": "2026-10-21T12:44:40.741158+00:00",
+      "revised_at": "2026-10-21T13:05:02.145683+00:00",
       "formula_latex": "Z=\\frac{X-\\mu}{\\sigma}"
     },
     "T031": {
@@ -537,28 +537,28 @@
     },
     "T042": {
       "intuition": "観測データが最も起きやすくなるパラメータを選ぶ推定法。",
-      "definition": "θ̂=argmax L(θ)、L(θ)=∏_i f(x_i|θ)、対数尤度ℓ=Σ_i log f(x_i|θ)。",
-      "derivation": "独立ベルヌーイの尤度はp^s(1-p)^(n-s)。微分s/p-(n-s)/(1-p)=0よりp̂=s/n。",
-      "example": "成功7・失敗3ならp̂=0.7。",
+      "definition": "最尤推定量は \\(\\hat\\theta=\\operatorname*{arg\\,max}_\\theta L(\\theta)\\)、独立標本なら \\(L(\\theta)=\\prod_{i=1}^n f(x_i\\mid\\theta)\\)。対数尤度は \\(\\ell(\\theta)=\\sum_i\\log f(x_i\\mid\\theta)\\)。",
+      "derivation": "ベルヌーイ標本で成功数 \\(s\\) のとき \\(L(p)=p^s(1-p)^{n-s}\\)。\\(\\ell'(p)=\\frac{s}{p}-\\frac{n-s}{1-p}=0\\) より \\(\\hat p=s/n\\)（境界も確認）。",
+      "example": "成功7回・失敗3回なら \\(\\hat p=\\frac7{10}=0.7\\)。",
       "conditions": "モデル指定と独立性を確認。境界解、識別可能性、停留点が最大かを確認。",
       "pitfalls": "確率変数について最大化するのではなく観測値を固定して母数を最大化する。",
       "exam_criteria": "まず尤度→対数→微分→境界・二階条件→推定量の順。",
       "review_status": "draft",
       "review_notes": "初期生成版。数式・導出・範囲の専門レビュー未完了",
-      "revised_at": "2026-10-21T12:44:40.741246+00:00",
+      "revised_at": "2026-10-21T13:05:02.145404+00:00",
       "formula_latex": "\\hat p=\\frac{\\sum_i X_i}{n}"
     },
     "T043": {
       "intuition": "母集団の理論モーメントと標本モーメントを一致させて母数を求める。",
-      "definition": "E_θ[X^r]=n^(-1)Σ_i X_i^r を必要次数まで連立する。",
-      "derivation": "ポアソン分布のE[X]=λと標本平均を等置するとλ̂= X̄。",
-      "example": "標本平均4ならλ̂=4。",
+      "definition": "母集団の理論モーメント \\(E_\\theta[X^r]\\) と標本モーメント \\(\\frac1n\\sum_{i=1}^n X_i^r\\) を等置する。",
+      "derivation": "ポアソン分布で \\(E[X]=\\lambda\\) なので \\(\\hat\\lambda=\\bar X\\)。",
+      "example": "\\(\\bar X=4\\) なら \\(\\hat\\lambda=4\\)。",
       "conditions": "必要なモーメントが存在し、連立方程式に解があること。",
       "pitfalls": "中心モーメントと原点まわりモーメントを混同しない。",
       "exam_criteria": "どの母数がどのモーメントで同定できるか確認する。",
       "review_status": "draft",
       "review_notes": "初期生成版。数式・導出・範囲の専門レビュー未完了",
-      "revised_at": "2026-10-21T12:44:40.741254+00:00",
+      "revised_at": "2026-10-21T13:05:02.145578+00:00",
       "formula_latex": "\\hat\\lambda=\\overline X"
     },
     "T044": {
@@ -654,15 +654,15 @@
     },
     "T051": {
       "intuition": "標本から母数を一定の信頼水準で覆う区間を構成する。",
-      "definition": "既知σの平均CIはX̄±z_(1−α/2)σ/√n。",
-      "derivation": "標準化統計量Z=(X̄−μ)/(σ/√n)の確率不等式をμについて解く。",
-      "example": "平均10、σ=4、n=16なら95%CIは10±1.96=(8.04,11.96)。",
+      "definition": "母標準偏差 \\(\\sigma\\) 既知の母平均に対する両側信頼区間は \\(\\bar X\\pm z_{1-\\alpha/2}\\frac{\\sigma}{\\sqrt n}\\)。",
+      "derivation": "\\(Z=\\frac{\\bar X-\\mu}{\\sigma/\\sqrt n}\\) の両側確率不等式を \\(\\mu\\) について解く。",
+      "example": "\\(\\bar X=10\\)、\\(\\sigma=4\\)、\\(n=16\\) の95%信頼区間は \\(10\\pm1.96=(8.04,11.96)\\)。",
       "conditions": "独立標本・正規母集団、または正規近似が妥当な条件。σ未知の小標本ならtを用いる。",
       "pitfalls": "『母数がこの区間に95%の確率で存在する』と頻度論的に解釈しない。",
       "exam_criteria": "σ既知か、標本数が十分か、片側か両側か確認する。",
       "review_status": "draft",
       "review_notes": "初期生成版。数式・導出・範囲の専門レビュー未完了",
-      "revised_at": "2026-10-21T12:44:40.741313+00:00",
+      "revised_at": "2026-10-21T13:05:02.145703+00:00",
       "formula_latex": "\\overline X\\pm z_{0.975}\\frac{\\sigma}{\\sqrt n}"
     },
     "T052": {
@@ -693,15 +693,15 @@
     },
     "T054": {
       "intuition": "帰無仮説が正しいとき、観測結果以上に極端な結果が出る確率。",
-      "definition": "p値=P_H0(Tが観測値以上に極端)。p≤αなら棄却。",
+      "definition": "\\(p\\) 値は帰無仮説 \\(H_0\\) の下で、観測値以上に極端な統計量を得る確率。\\(p\\leq\\alpha\\) なら棄却。",
       "derivation": "検定統計量の帰無分布を用い、対立仮説が片側か両側かに応じて尾確率を積分する。",
-      "example": "p=0.03、α=0.05なら帰無仮説を棄却する。",
-      "conditions": "p値の計算には帰無分布・極端さの定義が必要。",
+      "example": "\\(p=0.03\\)、有意水準 \\(\\alpha=0.05\\) なら \\(H_0\\) を棄却。",
+      "conditions": "\\(p\\) 値は帰無分布と片側／両側の定義に依存する。",
       "pitfalls": "p値を帰無仮説が正しい確率と解釈しない。",
       "exam_criteria": "有意水準と比較する前に片側・両側を確定する。",
       "review_status": "draft",
       "review_notes": "初期生成版。数式・導出・範囲の専門レビュー未完了",
-      "revised_at": "2026-10-21T12:44:40.741334+00:00",
+      "revised_at": "2026-10-21T13:05:02.145435+00:00",
       "formula_latex": "p\\leq\\alpha\\ \\Longrightarrow\\ H_0\\text{を棄却}"
     },
     "T055": {
@@ -732,15 +732,15 @@
     },
     "T057": {
       "intuition": "偽の帰無仮説を適切に棄却できる確率。",
-      "definition": "検出力=1−β=P_θ(棄却)、θは対立仮説側の母数。",
-      "derivation": "β=P_θ(棄却しない)なので補事象の確率として1−β。",
-      "example": "β=0.2なら検出力0.8。",
+      "definition": "検出力は対立仮説下で棄却する確率で、\\(1-\\beta=P_\\theta(\\text{棄却})\\)。",
+      "derivation": "第二種過誤は \\(\\beta=P_\\theta(\\text{棄却しない})\\) なので、補事象の確率は \\(1-\\beta\\)。",
+      "example": "\\(\\beta=0.2\\) なら検出力 \\(1-\\beta=0.8\\)。",
       "conditions": "効果量、標本数、有意水準、分散に依存する。",
-      "pitfalls": "有意水準αを1−検出力と取り違えない。",
+      "pitfalls": "有意水準 \\(\\alpha\\) と第二種過誤 \\(\\beta\\) を混同しない。",
       "exam_criteria": "対立仮説が具体的なら検出力曲線または非心分布を検討。",
       "review_status": "draft",
       "review_notes": "初期生成版。数式・導出・範囲の専門レビュー未完了",
-      "revised_at": "2026-10-21T12:44:40.741355+00:00",
+      "revised_at": "2026-10-21T13:05:02.145614+00:00",
       "formula_latex": "\\mathrm{Power}=1-\\beta"
     },
     "T058": {
@@ -797,15 +797,15 @@
     },
     "T062": {
       "intuition": "制約付きと制約なしの最良適合度を比較する検定。",
-      "definition": "Λ=L(θ̂0)/L(θ̂)、0≤Λ≤1。しばしば−2logΛを利用。",
-      "derivation": "帰無仮説のパラメータ集合は全体集合の部分集合なので制約付き最大尤度は制約なし最大尤度以下。",
-      "example": "制約が強く適合が悪ければΛは小さく、−2logΛは大きい。",
+      "definition": "尤度比 \\(\\Lambda=\\frac{L(\\hat\\theta_0)}{L(\\hat\\theta)}\\) の値域は \\(0\\leq\\Lambda\\leq1\\)。通常は \\(-2\\log\\Lambda\\) を使用する。",
+      "derivation": "帰無仮説の許容母数集合は制約なしの集合の部分集合なので \\(L(\\hat\\theta_0)\\leq L(\\hat\\theta)\\)。",
+      "example": "制約による適合悪化が大きいほど \\(\\Lambda\\) は小さく、\\(-2\\log\\Lambda\\) は大きい。",
       "conditions": "通常の漸近χ²近似には正則性・内点条件などが必要。",
       "pitfalls": "Λ自体と−2logΛの棄却方向を逆にしない。",
       "exam_criteria": "制約付き分子・制約なし分母を明示し範囲を確認。",
       "review_status": "draft",
       "review_notes": "初期生成版。数式・導出・範囲の専門レビュー未完了",
-      "revised_at": "2026-10-21T12:44:40.741392+00:00",
+      "revised_at": "2026-10-21T13:05:02.145722+00:00",
       "formula_latex": "\\Lambda=\\frac{\\sup_{\\theta\\in\\Theta_0}L(\\theta)}{\\sup_{\\theta\\in\\Theta}L(\\theta)}"
     },
     "T063": {
@@ -992,15 +992,15 @@
     },
     "T077": {
       "intuition": "他の説明変数を一定とした条件付きの線形関係を推定する。",
-      "definition": "y_i=β0+Σ_j β_j x_ij+ε_i、OLS β̂=(XᵀX)^(-1)Xᵀy。",
-      "derivation": "残差平方和(y-Xβ)ᵀ(y-Xβ)をβで微分すると正規方程式XᵀXβ=Xᵀy。",
-      "example": "ŷ=4+2x1−3x2でx1が3増え、x2一定なら予測値は6増加。",
+      "definition": "線形回帰モデルは \\(y_i=\\beta_0+\\sum_j\\beta_j x_{ij}+\\varepsilon_i\\)。列フルランクならOLS推定量は \\(\\hat\\beta=(X^{\\mathsf T}X)^{-1}X^{\\mathsf T}y\\)。",
+      "derivation": "残差平方和 \\((y-X\\beta)^{\\mathsf T}(y-X\\beta)\\) の微分をゼロにすると、正規方程式 \\(X^{\\mathsf T}X\\hat\\beta=X^{\\mathsf T}y\\) が得られる。",
+      "example": "\\(\\hat y=4+2x_1-3x_2\\) で \\(x_1\\) が3増加、\\(x_2\\) 一定なら \\(\\Delta\\hat y=2\\times3=6\\)。",
       "conditions": "Xが列フルランクなら通常の逆行列表示が可能。因果解釈には追加仮定。",
       "pitfalls": "係数を他変数が変動した場合の総効果と誤解しない。",
       "exam_criteria": "『他の変数を固定』の条件が設問にあるか確認する。",
       "review_status": "draft",
       "review_notes": "初期生成版。数式・導出・範囲の専門レビュー未完了",
-      "revised_at": "2026-10-21T12:44:40.741492+00:00",
+      "revised_at": "2026-10-21T13:05:02.145497+00:00",
       "formula_latex": "\\Delta\\hat y=\\beta_1\\Delta x_1"
     },
     "T078": {
@@ -1213,15 +1213,15 @@
     },
     "T094": {
       "intuition": "複数群の平均差を群間変動と群内変動の比で検定する。",
-      "definition": "F=MS_between/MS_within、df_between=k−1、df_within=N−k。",
+      "definition": "一元配置分散分析の検定統計量は \\(F=MS_{\\mathrm{between}}/MS_{\\mathrm{within}}\\)。群間自由度 \\(k-1\\)、群内自由度 \\(N-k\\)。",
       "derivation": "総平方和を群間平方和と群内平方和に分解し、各自由度で割って平均平方を作る。",
-      "example": "3群各5件ならN=15、自由度は2と12。",
+      "example": "3群で各5観測なら \\(N=15\\)、自由度は \\(k-1=2\\) と \\(N-k=12\\)。",
       "conditions": "独立性、群内正規性、等分散性が古典的F検定の条件。",
       "pitfalls": "自由度をkとNだけで書いて1を引き忘れる。",
       "exam_criteria": "群平均を比較するか、群間・群内の二つの分散源を識別する。",
       "review_status": "draft",
       "review_notes": "初期生成版。数式・導出・範囲の専門レビュー未完了",
-      "revised_at": "2026-10-21T12:44:40.741600+00:00",
+      "revised_at": "2026-10-21T13:05:02.145638+00:00",
       "formula_latex": "df_{\\mathrm{between}}=k-1,\\quad df_{\\mathrm{within}}=N-k"
     },
     "T095": {
@@ -1343,15 +1343,15 @@
     },
     "T104": {
       "intuition": "非復元抽出では標本に含まれた要素が母集団残部に影響することを補正する。",
-      "definition": "単純無作為非復元抽出でVar(X̄)=(1−n/N)S²/n（S²の定義に注意）。分散の修正係数は(N−n)/(N−1)という表記もある。",
+      "definition": "非復元単純無作為抽出では、分母 \\(N-1\\) の有限母集団分散 \\(S^2\\) を用いて \\(\\operatorname{Var}(\\bar X)=\\left(1-\\frac nN\\right)\\frac{S^2}{n}\\)。別の分散定義では \\((N-n)/(N-1)\\) の修正係数を使う。",
       "derivation": "共分散が負になる効果を標本平均の分散計算へ組み込む。",
-      "example": "N=101,n=11なら(N−n)/(N−1)=90/100=0.9。",
+      "example": "\\(N=101,n=11\\) なら \\(\\frac{N-n}{N-1}=\\frac{90}{100}=0.9\\)。",
       "conditions": "有限母集団からの非復元単純無作為抽出。母分散定義によって係数表示が変わる。",
-      "pitfalls": "標準誤差に分散の補正係数をそのまま掛けない。平方根が必要。",
+      "pitfalls": "標準誤差への修正は分散の修正係数の平方根 \\(\\sqrt{(N-n)/(N-1)}\\) を用いる。",
       "exam_criteria": "復元・非復元、分散・標準誤差、母分散の分母定義をまず確認。",
       "review_status": "draft",
       "review_notes": "初期生成版。数式・導出・範囲の専門レビュー未完了",
-      "revised_at": "2026-10-21T12:44:40.741661+00:00",
+      "revised_at": "2026-10-21T13:05:02.145741+00:00",
       "formula_latex": "\\frac{N-n}{N-1}"
     },
     "T105": {
