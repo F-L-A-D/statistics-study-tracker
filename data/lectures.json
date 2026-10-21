@@ -12,7 +12,8 @@
       "exam_criteria": "条件イベントが分母、共通部分が分子。",
       "review_status": "draft",
       "review_notes": "初期生成版。数式・導出・範囲の専門レビュー未完了",
-      "revised_at": "2026-10-21T12:44:40.740814+00:00"
+      "revised_at": "2026-10-21T12:44:40.740814+00:00",
+      "formula_latex": "P(A\\mid B)=\\frac{P(A\\cap B)}{P(B)}"
     },
     "T002": {
       "intuition": "",
@@ -24,7 +25,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.740927+00:00"
+      "revised_at": "2026-10-21T12:44:40.740927+00:00",
+      "formula_latex": ""
     },
     "T003": {
       "intuition": "事前確率を観測で更新する仕組み。珍しい事象の判定では検査の精度だけでなく基準率が効く。",
@@ -36,7 +38,8 @@
       "exam_criteria": "観測情報Bが与えられた事後確率なら分母に観測の全確率を置く。",
       "review_status": "draft",
       "review_notes": "初期生成版。数式・導出・範囲の専門レビュー未完了",
-      "revised_at": "2026-10-21T12:44:40.740940+00:00"
+      "revised_at": "2026-10-21T12:44:40.740940+00:00",
+      "formula_latex": "P(A\\mid B)=\\frac{P(B\\mid A)P(A)}{P(B)}"
     },
     "T004": {
       "intuition": "",
@@ -48,7 +51,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.740950+00:00"
+      "revised_at": "2026-10-21T12:44:40.740950+00:00",
+      "formula_latex": ""
     },
     "T005": {
       "intuition": "",
@@ -60,7 +64,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.740958+00:00"
+      "revised_at": "2026-10-21T12:44:40.740958+00:00",
+      "formula_latex": ""
     },
     "T006": {
       "intuition": "",
@@ -72,7 +77,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.740965+00:00"
+      "revised_at": "2026-10-21T12:44:40.740965+00:00",
+      "formula_latex": ""
     },
     "T007": {
       "intuition": "値の確率による重み付き平均で、長期的な平均的水準を表す。",
@@ -84,7 +90,8 @@
       "exam_criteria": "足し引きと定数倍は期待値を各項へ分配する。",
       "review_status": "draft",
       "review_notes": "初期生成版。数式・導出・範囲の専門レビュー未完了",
-      "revised_at": "2026-10-21T12:44:40.740972+00:00"
+      "revised_at": "2026-10-21T12:44:40.740972+00:00",
+      "formula_latex": "E[aX+bY+c]=aE[X]+bE[Y]+c"
     },
     "T008": {
       "intuition": "分散は平均との差の二乗の平均。\\(\\operatorname{Var}(aX+b)=a^2\\operatorname{Var}(X)\\)。定数bの加算は散らばりを変えず、倍率aは偏差をa倍するので分散はa²倍。標準偏差は|a|倍。",
@@ -96,7 +103,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.740980+00:00"
+      "revised_at": "2026-10-21T12:44:40.740980+00:00",
+      "formula_latex": "\\mathrm{Var}(aX+b)=a^2\\mathrm{Var}(X)"
     },
     "T009": {
       "intuition": "共分散\\(\\operatorname{Cov}(X,Y)=E[(X-EX)(Y-EY)]\\)は同方向に変動する傾向を表す。\\(\\operatorname{Cov}(aX+b,cY+d)=ac\\operatorname{Cov}(X,Y)\\)。符号はa,cの積に従い、定数の平行移動は影響しない。",
@@ -108,7 +116,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.740987+00:00"
+      "revised_at": "2026-10-21T12:44:40.740987+00:00",
+      "formula_latex": "\\mathrm{Cov}(aX+b,cY+d)=ac\\,\\mathrm{Cov}(X,Y)"
     },
     "T010": {
       "intuition": "ピアソン相関係数\\(\\rho=\\frac{\\operatorname{Cov}(X,Y)}{\\operatorname{SD}(X)\\operatorname{SD}(Y)}\\)は線形な関連の強さと方向を表し、−1から1の範囲。共分散を標準偏差の積で割るので単位に依存しない。相関が0でも非線形な依存が残ることがある。",
@@ -120,7 +129,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.740994+00:00"
+      "revised_at": "2026-10-21T12:44:40.740994+00:00",
+      "formula_latex": "\\rho=\\frac{\\mathrm{Cov}(X,Y)}{\\sigma_X\\sigma_Y}"
     },
     "T011": {
       "intuition": "条件付き期待値E[X|Y]はYを知ったときのXの平均。反復期待値の法則\\(E[E[X\\mid Y]]=E[X]\\)により、条件付き期待値をYについて平均すると元の期待値に戻る。独立性は不要。",
@@ -132,7 +142,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741001+00:00"
+      "revised_at": "2026-10-21T12:44:40.741001+00:00",
+      "formula_latex": "E[E[X\\mid Y]]=E[X]"
     },
     "T012": {
       "intuition": "",
@@ -144,7 +155,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741025+00:00"
+      "revised_at": "2026-10-21T12:44:40.741025+00:00",
+      "formula_latex": ""
     },
     "T013": {
       "intuition": "",
@@ -156,7 +168,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741033+00:00"
+      "revised_at": "2026-10-21T12:44:40.741033+00:00",
+      "formula_latex": ""
     },
     "T014": {
       "intuition": "",
@@ -168,7 +181,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741040+00:00"
+      "revised_at": "2026-10-21T12:44:40.741040+00:00",
+      "formula_latex": ""
     },
     "T015": {
       "intuition": "",
@@ -180,7 +194,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741046+00:00"
+      "revised_at": "2026-10-21T12:44:40.741046+00:00",
+      "formula_latex": ""
     },
     "T016": {
       "intuition": "",
@@ -192,7 +207,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741052+00:00"
+      "revised_at": "2026-10-21T12:44:40.741052+00:00",
+      "formula_latex": ""
     },
     "T017": {
       "intuition": "中心極限定理は、独立同分布で有限な平均μと正の有限分散σ²を持つ標本の平均が、標準化すると大標本で標準正規に近づくこと。\\(\\frac{\\sqrt n(\\bar X-\\mu)}{\\sigma}\\xrightarrow{d}N(0,1)\\)。母集団自体が正規である必要はない。",
@@ -204,7 +220,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741059+00:00"
+      "revised_at": "2026-10-21T12:44:40.741059+00:00",
+      "formula_latex": "\\frac{\\sqrt n(\\overline X-\\mu)}{\\sigma}\\xrightarrow{d}N(0,1)"
     },
     "T018": {
       "intuition": "",
@@ -216,7 +233,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741066+00:00"
+      "revised_at": "2026-10-21T12:44:40.741066+00:00",
+      "formula_latex": ""
     },
     "T019": {
       "intuition": "",
@@ -228,7 +246,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741078+00:00"
+      "revised_at": "2026-10-21T12:44:40.741078+00:00",
+      "formula_latex": ""
     },
     "T020": {
       "intuition": "スルツキーの補題は、Xnが分布収束しYnが定数cへ確率収束するなら、和・積・商の極限を定数との演算で扱えるという結果。\\(X_n/Y_n\\xrightarrow{d}X/c\\)（c≠0）。正規変数を2で割れば分散は1/4。",
@@ -240,7 +259,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741084+00:00"
+      "revised_at": "2026-10-21T12:44:40.741084+00:00",
+      "formula_latex": "X_n\\xrightarrow d X,\\ Y_n\\xrightarrow p c\\neq0\\Rightarrow X_n/Y_n\\xrightarrow d X/c"
     },
     "T021": {
       "intuition": "デルタ法は推定量に滑らかな関数gを適用したときの漸近分布を、一次テイラー展開で近似する。\\(\\sqrt n(g(\\hat\\theta)-g(\\theta))\\approx g'(\\theta)\\sqrt n(\\hat\\theta-\\theta)\\)。漸近分散は\\([g'(\\theta)]^2V\\)。",
@@ -252,7 +272,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741092+00:00"
+      "revised_at": "2026-10-21T12:44:40.741092+00:00",
+      "formula_latex": "\\sqrt n\\{g(\\hat\\theta)-g(\\theta)\\}\\xrightarrow d N(0,[g'(\\theta)]^2V)"
     },
     "T022": {
       "intuition": "",
@@ -264,7 +285,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741099+00:00"
+      "revised_at": "2026-10-21T12:44:40.741099+00:00",
+      "formula_latex": ""
     },
     "T023": {
       "intuition": "独立な同条件の試行における成功回数を数える分布。",
@@ -276,7 +298,8 @@
       "exam_criteria": "固定回数の成功数なら二項、成功までの回数なら幾何、非復元抽出なら超幾何を検討。",
       "review_status": "draft",
       "review_notes": "初期生成版。数式・導出・範囲の専門レビュー未完了",
-      "revised_at": "2026-10-21T12:44:40.741106+00:00"
+      "revised_at": "2026-10-21T12:44:40.741106+00:00",
+      "formula_latex": "P(X=k)=\\binom nk p^k(1-p)^{n-k}"
     },
     "T024": {
       "intuition": "",
@@ -288,7 +311,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741114+00:00"
+      "revised_at": "2026-10-21T12:44:40.741114+00:00",
+      "formula_latex": ""
     },
     "T025": {
       "intuition": "一定の率で独立に生じる稀な事象の回数を表す。",
@@ -300,7 +324,8 @@
       "exam_criteria": "時間・面積当たり件数と平均率の指定に注目する。",
       "review_status": "draft",
       "review_notes": "初期生成版。数式・導出・範囲の専門レビュー未完了",
-      "revised_at": "2026-10-21T12:44:40.741121+00:00"
+      "revised_at": "2026-10-21T12:44:40.741121+00:00",
+      "formula_latex": "P(X=k)=\\frac{e^{-\\lambda}\\lambda^k}{k!}"
     },
     "T026": {
       "intuition": "",
@@ -312,7 +337,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741132+00:00"
+      "revised_at": "2026-10-21T12:44:40.741132+00:00",
+      "formula_latex": ""
     },
     "T027": {
       "intuition": "",
@@ -324,7 +350,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741139+00:00"
+      "revised_at": "2026-10-21T12:44:40.741139+00:00",
+      "formula_latex": ""
     },
     "T028": {
       "intuition": "",
@@ -336,7 +363,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741146+00:00"
+      "revised_at": "2026-10-21T12:44:40.741146+00:00",
+      "formula_latex": ""
     },
     "T029": {
       "intuition": "",
@@ -348,7 +376,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741152+00:00"
+      "revised_at": "2026-10-21T12:44:40.741152+00:00",
+      "formula_latex": ""
     },
     "T030": {
       "intuition": "多数の独立した小さな要因の和の近似にも現れる鐘形の分布。",
@@ -360,7 +389,8 @@
       "exam_criteria": "標準化は平均との差を標準偏差で割る。",
       "review_status": "draft",
       "review_notes": "初期生成版。数式・導出・範囲の専門レビュー未完了",
-      "revised_at": "2026-10-21T12:44:40.741158+00:00"
+      "revised_at": "2026-10-21T12:44:40.741158+00:00",
+      "formula_latex": "Z=\\frac{X-\\mu}{\\sigma}"
     },
     "T031": {
       "intuition": "指数分布は一定の到着率λをもつポアソン過程の待ち時間を表す。rate表記なら密度\\(f(x)=\\lambda e^{-\\lambda x}\\) (x≥0)、\\(E[X]=\\frac1\\lambda\\)、\\(\\operatorname{Var}(X)=\\frac1{\\lambda^2}\\)。記憶なし性\\(P(X>s+t\\mid X>s)=P(X>t)\\)が特徴。",
@@ -372,7 +402,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741166+00:00"
+      "revised_at": "2026-10-21T12:44:40.741166+00:00",
+      "formula_latex": "E[X]=\\frac1\\lambda,\\quad f(x)=\\lambda e^{-\\lambda x}"
     },
     "T032": {
       "intuition": "\\(\\operatorname{Gamma}(\\mathrm{shape}=\\alpha,\\mathrm{rate}=\\beta)\\)では\\(E[X]=\\frac{\\alpha}{\\beta}\\)、\\(\\operatorname{Var}(X)=\\frac{\\alpha}{\\beta^2}\\)。指数分布は\\(\\alpha=1\\)の場合。尺度パラメータθを使う流儀では\\(E[X]=\\alpha\\theta\\)となるので問題文のrate/scaleを最初に確認する。",
@@ -384,7 +415,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741173+00:00"
+      "revised_at": "2026-10-21T12:44:40.741173+00:00",
+      "formula_latex": "E[X]=\\frac{\\alpha}{\\beta}\\quad(\\mathrm{rate}\\ \\beta)"
     },
     "T033": {
       "intuition": "Beta(α,β)は0から1の値を取る確率変数の分布で、密度は\\(x^{\\alpha-1}(1-x)^{\\beta-1}\\)に比例。\\(E[X]=\\frac{\\alpha}{\\alpha+\\beta}\\)、\\(\\operatorname{Var}(X)=\\frac{\\alpha\\beta}{(\\alpha+\\beta)^2(\\alpha+\\beta+1)}\\)。ベルヌーイ確率の事前分布としても使う。",
@@ -396,7 +428,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741181+00:00"
+      "revised_at": "2026-10-21T12:44:40.741181+00:00",
+      "formula_latex": "E[X]=\\frac{\\alpha}{\\alpha+\\beta}"
     },
     "T034": {
       "intuition": "",
@@ -408,7 +441,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741188+00:00"
+      "revised_at": "2026-10-21T12:44:40.741188+00:00",
+      "formula_latex": ""
     },
     "T035": {
       "intuition": "",
@@ -420,7 +454,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741196+00:00"
+      "revised_at": "2026-10-21T12:44:40.741196+00:00",
+      "formula_latex": ""
     },
     "T036": {
       "intuition": "多変量正規分布では共分散行列が依存構造を決める。2変量正規なら\\(\\operatorname{Cov}(X,Y)=0\\)から独立が従う。一般の分布では無相関でも非線形依存がありうる。例えばX対称で\\(Y=X^2\\)。",
@@ -432,7 +467,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741203+00:00"
+      "revised_at": "2026-10-21T12:44:40.741203+00:00",
+      "formula_latex": "(X,Y)\\text{が同時正規},\\ \\mathrm{Cov}(X,Y)=0\\Rightarrow X\\perp Y"
     },
     "T037": {
       "intuition": "t分布は\\(\\frac Z{\\sqrt{U/\\nu}}\\)（\\(Z\\sim N(0,1)\\)、\\(U\\sim\\chi^2_\\nu\\)、独立）で定義され、自由度が小さいほど裾が厚い。\\(\\nu\\to\\infty\\)では\\(U/\\nu\\)が1へ近づくため標準正規に分布収束する。母分散未知の平均推定で重要。",
@@ -444,7 +480,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741210+00:00"
+      "revised_at": "2026-10-21T12:44:40.741210+00:00",
+      "formula_latex": "T_\\nu=\\frac{Z}{\\sqrt{U/\\nu}}\\xrightarrow[\\nu\\to\\infty]{d}N(0,1)"
     },
     "T038": {
       "intuition": "\\(\\chi^2\\)分布は独立な標準正規変数の平方和\\(\\sum_i Z_i^2\\)で定義され、項数が自由度ν。平均ν、分散2ν。分散の推定や適合度検定に登場する。独立性が重要な仮定。",
@@ -456,7 +493,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741219+00:00"
+      "revised_at": "2026-10-21T12:44:40.741219+00:00",
+      "formula_latex": "\\sum_{i=1}^{\\nu}Z_i^2\\sim\\chi_\\nu^2"
     },
     "T039": {
       "intuition": "",
@@ -468,7 +506,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741226+00:00"
+      "revised_at": "2026-10-21T12:44:40.741226+00:00",
+      "formula_latex": ""
     },
     "T040": {
       "intuition": "統計量Tが十分とは、Tを知れば元データの持つ母数に関する情報が追加で不要になること。Bernoulli(p)標本の尤度は\\(p^{\\sum_iX_i}(1-p)^{n-\\sum_iX_i}\\)なので成功回数\\(\\sum_iX_i\\)が十分統計量。因子分解定理でも確認できる。",
@@ -480,7 +519,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741232+00:00"
+      "revised_at": "2026-10-21T12:44:40.741232+00:00",
+      "formula_latex": "L(p)=p^{\\sum X_i}(1-p)^{n-\\sum X_i}"
     },
     "T041": {
       "intuition": "",
@@ -492,7 +532,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741239+00:00"
+      "revised_at": "2026-10-21T12:44:40.741239+00:00",
+      "formula_latex": ""
     },
     "T042": {
       "intuition": "観測データが最も起きやすくなるパラメータを選ぶ推定法。",
@@ -504,7 +545,8 @@
       "exam_criteria": "まず尤度→対数→微分→境界・二階条件→推定量の順。",
       "review_status": "draft",
       "review_notes": "初期生成版。数式・導出・範囲の専門レビュー未完了",
-      "revised_at": "2026-10-21T12:44:40.741246+00:00"
+      "revised_at": "2026-10-21T12:44:40.741246+00:00",
+      "formula_latex": "\\hat p=\\frac{\\sum_i X_i}{n}"
     },
     "T043": {
       "intuition": "母集団の理論モーメントと標本モーメントを一致させて母数を求める。",
@@ -516,7 +558,8 @@
       "exam_criteria": "どの母数がどのモーメントで同定できるか確認する。",
       "review_status": "draft",
       "review_notes": "初期生成版。数式・導出・範囲の専門レビュー未完了",
-      "revised_at": "2026-10-21T12:44:40.741254+00:00"
+      "revised_at": "2026-10-21T12:44:40.741254+00:00",
+      "formula_latex": "\\hat\\lambda=\\overline X"
     },
     "T044": {
       "intuition": "",
@@ -528,7 +571,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741262+00:00"
+      "revised_at": "2026-10-21T12:44:40.741262+00:00",
+      "formula_latex": ""
     },
     "T045": {
       "intuition": "",
@@ -540,7 +584,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741268+00:00"
+      "revised_at": "2026-10-21T12:44:40.741268+00:00",
+      "formula_latex": ""
     },
     "T046": {
       "intuition": "",
@@ -552,7 +597,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741274+00:00"
+      "revised_at": "2026-10-21T12:44:40.741274+00:00",
+      "formula_latex": ""
     },
     "T047": {
       "intuition": "",
@@ -564,7 +610,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741281+00:00"
+      "revised_at": "2026-10-21T12:44:40.741281+00:00",
+      "formula_latex": ""
     },
     "T048": {
       "intuition": "クラーメル・ラオ下界は、正則条件下で不偏推定量の分散がフィッシャー情報量の逆数より小さくできないことを示す。θ自体を推定するなら\\(\\operatorname{Var}(T)\\ge\\frac1{I(\\theta)}\\)。g(θ)を推定するなら\\(\\frac{[g'(\\theta)]^2}{I(\\theta)}\\)。",
@@ -576,7 +623,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741287+00:00"
+      "revised_at": "2026-10-21T12:44:40.741287+00:00",
+      "formula_latex": "\\mathrm{Var}(\\hat\\theta)\\geq\\frac1{I(\\theta)}"
     },
     "T049": {
       "intuition": "フィッシャー情報量は、観測からパラメータをどれだけ精密に推定できるかの尺度。正則条件下で\\(I(\\theta)=-E[\\partial^2\\log L/\\partial\\theta^2]\\)。\\(N(\\mu,\\sigma^2)\\)でσ²既知の独立n標本ならμに関する情報量は\\(\\frac n{\\sigma^2}\\)。",
@@ -588,7 +636,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741299+00:00"
+      "revised_at": "2026-10-21T12:44:40.741299+00:00",
+      "formula_latex": "I(\\mu)=\\frac n{\\sigma^2}"
     },
     "T050": {
       "intuition": "",
@@ -600,7 +649,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741306+00:00"
+      "revised_at": "2026-10-21T12:44:40.741306+00:00",
+      "formula_latex": ""
     },
     "T051": {
       "intuition": "標本から母数を一定の信頼水準で覆う区間を構成する。",
@@ -612,7 +662,8 @@
       "exam_criteria": "σ既知か、標本数が十分か、片側か両側か確認する。",
       "review_status": "draft",
       "review_notes": "初期生成版。数式・導出・範囲の専門レビュー未完了",
-      "revised_at": "2026-10-21T12:44:40.741313+00:00"
+      "revised_at": "2026-10-21T12:44:40.741313+00:00",
+      "formula_latex": "\\overline X\\pm z_{0.975}\\frac{\\sigma}{\\sqrt n}"
     },
     "T052": {
       "intuition": "",
@@ -624,7 +675,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741321+00:00"
+      "revised_at": "2026-10-21T12:44:40.741321+00:00",
+      "formula_latex": ""
     },
     "T053": {
       "intuition": "",
@@ -636,7 +688,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741328+00:00"
+      "revised_at": "2026-10-21T12:44:40.741328+00:00",
+      "formula_latex": ""
     },
     "T054": {
       "intuition": "帰無仮説が正しいとき、観測結果以上に極端な結果が出る確率。",
@@ -648,7 +701,8 @@
       "exam_criteria": "有意水準と比較する前に片側・両側を確定する。",
       "review_status": "draft",
       "review_notes": "初期生成版。数式・導出・範囲の専門レビュー未完了",
-      "revised_at": "2026-10-21T12:44:40.741334+00:00"
+      "revised_at": "2026-10-21T12:44:40.741334+00:00",
+      "formula_latex": "p\\leq\\alpha\\ \\Longrightarrow\\ H_0\\text{を棄却}"
     },
     "T055": {
       "intuition": "",
@@ -660,7 +714,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741342+00:00"
+      "revised_at": "2026-10-21T12:44:40.741342+00:00",
+      "formula_latex": ""
     },
     "T056": {
       "intuition": "",
@@ -672,7 +727,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741348+00:00"
+      "revised_at": "2026-10-21T12:44:40.741348+00:00",
+      "formula_latex": ""
     },
     "T057": {
       "intuition": "偽の帰無仮説を適切に棄却できる確率。",
@@ -684,7 +740,8 @@
       "exam_criteria": "対立仮説が具体的なら検出力曲線または非心分布を検討。",
       "review_status": "draft",
       "review_notes": "初期生成版。数式・導出・範囲の専門レビュー未完了",
-      "revised_at": "2026-10-21T12:44:40.741355+00:00"
+      "revised_at": "2026-10-21T12:44:40.741355+00:00",
+      "formula_latex": "\\mathrm{Power}=1-\\beta"
     },
     "T058": {
       "intuition": "",
@@ -696,7 +753,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741363+00:00"
+      "revised_at": "2026-10-21T12:44:40.741363+00:00",
+      "formula_latex": ""
     },
     "T059": {
       "intuition": "",
@@ -708,7 +766,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741369+00:00"
+      "revised_at": "2026-10-21T12:44:40.741369+00:00",
+      "formula_latex": ""
     },
     "T060": {
       "intuition": "ワルド検定は推定値と帰無仮説値の差を標準誤差で割って評価する。\\(W=\\frac{\\hat\\theta-\\theta_0}{\\operatorname{SE}(\\hat\\theta)}\\)。適切な正則条件と大標本の下で帰無仮説下のWは標準正規近似。W²はχ²(1)近似。",
@@ -720,7 +779,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741376+00:00"
+      "revised_at": "2026-10-21T12:44:40.741376+00:00",
+      "formula_latex": "W=\\frac{\\hat\\theta-\\theta_0}{\\mathrm{SE}(\\hat\\theta)}"
     },
     "T061": {
       "intuition": "",
@@ -732,7 +792,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741385+00:00"
+      "revised_at": "2026-10-21T12:44:40.741385+00:00",
+      "formula_latex": ""
     },
     "T062": {
       "intuition": "制約付きと制約なしの最良適合度を比較する検定。",
@@ -744,7 +805,8 @@
       "exam_criteria": "制約付き分子・制約なし分母を明示し範囲を確認。",
       "review_status": "draft",
       "review_notes": "初期生成版。数式・導出・範囲の専門レビュー未完了",
-      "revised_at": "2026-10-21T12:44:40.741392+00:00"
+      "revised_at": "2026-10-21T12:44:40.741392+00:00",
+      "formula_latex": "\\Lambda=\\frac{\\sup_{\\theta\\in\\Theta_0}L(\\theta)}{\\sup_{\\theta\\in\\Theta}L(\\theta)}"
     },
     "T063": {
       "intuition": "",
@@ -756,7 +818,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741399+00:00"
+      "revised_at": "2026-10-21T12:44:40.741399+00:00",
+      "formula_latex": ""
     },
     "T064": {
       "intuition": "",
@@ -768,7 +831,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741406+00:00"
+      "revised_at": "2026-10-21T12:44:40.741406+00:00",
+      "formula_latex": ""
     },
     "T065": {
       "intuition": "独立2標本の平均差の検定で母分散が等しいと仮定しない場合はWelchのt検定。統計量は\\(\\frac{\\bar X-\\bar Y}{\\sqrt{s_1^2/n_1+s_2^2/n_2}}\\)。自由度はWelch–Satterthwaite近似を用いる。対応のあるデータなら対応のあるt検定を使う。",
@@ -780,7 +844,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741412+00:00"
+      "revised_at": "2026-10-21T12:44:40.741412+00:00",
+      "formula_latex": "t=\\frac{\\overline X-\\overline Y}{\\sqrt{s_1^2/n_1+s_2^2/n_2}}"
     },
     "T066": {
       "intuition": "",
@@ -792,7 +857,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741419+00:00"
+      "revised_at": "2026-10-21T12:44:40.741419+00:00",
+      "formula_latex": ""
     },
     "T067": {
       "intuition": "多数の仮説を個別に有意水準αで検定すると、少なくとも1件の誤棄却が起こる確率が増える。Bonferroni法はm件の各検定を\\(\\frac{\\alpha}{m}\\)で行い、家族内第一種過誤率をα以下に制御する。検定間の独立性は必須でない。",
@@ -804,7 +870,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741425+00:00"
+      "revised_at": "2026-10-21T12:44:40.741425+00:00",
+      "formula_latex": "\\alpha_{\\mathrm{each}}=\\frac\\alpha m"
     },
     "T068": {
       "intuition": "",
@@ -816,7 +883,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741432+00:00"
+      "revised_at": "2026-10-21T12:44:40.741432+00:00",
+      "formula_latex": ""
     },
     "T069": {
       "intuition": "クラスカル・ウォリス検定は独立な3群以上の分布を順位に基づいて比較するノンパラメトリック検定。帰無仮説は群の分布が同一という形で扱う。分布形が共通なら位置差の検定として解釈できる。",
@@ -828,7 +896,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741438+00:00"
+      "revised_at": "2026-10-21T12:44:40.741438+00:00",
+      "formula_latex": "H=\\frac{12}{N(N+1)}\\sum_{j=1}^k\\frac{R_j^2}{n_j}-3(N+1)"
     },
     "T070": {
       "intuition": "マルコフ連鎖では次の状態の分布が現在の状態のみに依存する。定常分布πは\\(\\boldsymbol\\pi P=\\boldsymbol\\pi\\)かつ成分和1を満たす。2状態なら\\(\\pi_1P_{12}=\\pi_2P_{21}\\)という釣り合い式も使える。存在・一意性は連鎖の性質による。",
@@ -840,7 +909,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741446+00:00"
+      "revised_at": "2026-10-21T12:44:40.741446+00:00",
+      "formula_latex": "\\boldsymbol\\pi P=\\boldsymbol\\pi,\\quad\\sum_i\\pi_i=1"
     },
     "T071": {
       "intuition": "",
@@ -852,7 +922,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741452+00:00"
+      "revised_at": "2026-10-21T12:44:40.741452+00:00",
+      "formula_latex": ""
     },
     "T072": {
       "intuition": "",
@@ -864,7 +935,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741461+00:00"
+      "revised_at": "2026-10-21T12:44:40.741461+00:00",
+      "formula_latex": ""
     },
     "T073": {
       "intuition": "",
@@ -876,7 +948,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741467+00:00"
+      "revised_at": "2026-10-21T12:44:40.741467+00:00",
+      "formula_latex": ""
     },
     "T074": {
       "intuition": "",
@@ -888,7 +961,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741473+00:00"
+      "revised_at": "2026-10-21T12:44:40.741473+00:00",
+      "formula_latex": ""
     },
     "T075": {
       "intuition": "ポアソン過程N(t)は独立・定常な増分を持ち、率λなら時間tの到着回数は\\(\\operatorname{Pois}(\\lambda t)\\)。したがって\\(E[N(t)]=\\lambda t\\)、\\(\\operatorname{Var}[N(t)]=\\lambda t\\)。単位が時間当たりならtも時間で揃える。",
@@ -900,7 +974,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741479+00:00"
+      "revised_at": "2026-10-21T12:44:40.741479+00:00",
+      "formula_latex": "N(t)\\sim\\mathrm{Pois}(\\lambda t),\\quad E[N(t)]=\\lambda t"
     },
     "T076": {
       "intuition": "",
@@ -912,7 +987,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741486+00:00"
+      "revised_at": "2026-10-21T12:44:40.741486+00:00",
+      "formula_latex": ""
     },
     "T077": {
       "intuition": "他の説明変数を一定とした条件付きの線形関係を推定する。",
@@ -924,7 +1000,8 @@
       "exam_criteria": "『他の変数を固定』の条件が設問にあるか確認する。",
       "review_status": "draft",
       "review_notes": "初期生成版。数式・導出・範囲の専門レビュー未完了",
-      "revised_at": "2026-10-21T12:44:40.741492+00:00"
+      "revised_at": "2026-10-21T12:44:40.741492+00:00",
+      "formula_latex": "\\Delta\\hat y=\\beta_1\\Delta x_1"
     },
     "T078": {
       "intuition": "",
@@ -936,7 +1013,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741500+00:00"
+      "revised_at": "2026-10-21T12:44:40.741500+00:00",
+      "formula_latex": ""
     },
     "T079": {
       "intuition": "",
@@ -948,7 +1026,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741506+00:00"
+      "revised_at": "2026-10-21T12:44:40.741506+00:00",
+      "formula_latex": ""
     },
     "T080": {
       "intuition": "",
@@ -960,7 +1039,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741512+00:00"
+      "revised_at": "2026-10-21T12:44:40.741512+00:00",
+      "formula_latex": ""
     },
     "T081": {
       "intuition": "",
@@ -972,7 +1052,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741518+00:00"
+      "revised_at": "2026-10-21T12:44:40.741518+00:00",
+      "formula_latex": ""
     },
     "T082": {
       "intuition": "",
@@ -984,7 +1065,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741524+00:00"
+      "revised_at": "2026-10-21T12:44:40.741524+00:00",
+      "formula_latex": ""
     },
     "T083": {
       "intuition": "",
@@ -996,7 +1078,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741530+00:00"
+      "revised_at": "2026-10-21T12:44:40.741530+00:00",
+      "formula_latex": ""
     },
     "T084": {
       "intuition": "",
@@ -1008,7 +1091,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741536+00:00"
+      "revised_at": "2026-10-21T12:44:40.741536+00:00",
+      "formula_latex": ""
     },
     "T085": {
       "intuition": "",
@@ -1020,7 +1104,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741542+00:00"
+      "revised_at": "2026-10-21T12:44:40.741542+00:00",
+      "formula_latex": ""
     },
     "T086": {
       "intuition": "",
@@ -1032,7 +1117,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741548+00:00"
+      "revised_at": "2026-10-21T12:44:40.741548+00:00",
+      "formula_latex": ""
     },
     "T087": {
       "intuition": "",
@@ -1044,7 +1130,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741554+00:00"
+      "revised_at": "2026-10-21T12:44:40.741554+00:00",
+      "formula_latex": ""
     },
     "T088": {
       "intuition": "ロジスティック回帰は\\(\\log\\frac p{1-p}=\\beta_0+\\beta_1x\\)をモデル化する。xをΔ増やすと対数オッズはβ1Δ増え、オッズは\\(\\exp(\\beta_1\\Delta)\\)倍。確率がその倍率で増えるわけではない。",
@@ -1056,7 +1143,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741561+00:00"
+      "revised_at": "2026-10-21T12:44:40.741561+00:00",
+      "formula_latex": "\\log\\frac p{1-p}=\\beta_0+\\beta_1x"
     },
     "T089": {
       "intuition": "",
@@ -1068,7 +1156,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741568+00:00"
+      "revised_at": "2026-10-21T12:44:40.741568+00:00",
+      "formula_latex": ""
     },
     "T090": {
       "intuition": "",
@@ -1080,7 +1169,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741575+00:00"
+      "revised_at": "2026-10-21T12:44:40.741575+00:00",
+      "formula_latex": ""
     },
     "T091": {
       "intuition": "",
@@ -1092,7 +1182,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741581+00:00"
+      "revised_at": "2026-10-21T12:44:40.741581+00:00",
+      "formula_latex": ""
     },
     "T092": {
       "intuition": "",
@@ -1104,7 +1195,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741588+00:00"
+      "revised_at": "2026-10-21T12:44:40.741588+00:00",
+      "formula_latex": ""
     },
     "T093": {
       "intuition": "",
@@ -1116,7 +1208,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741594+00:00"
+      "revised_at": "2026-10-21T12:44:40.741594+00:00",
+      "formula_latex": ""
     },
     "T094": {
       "intuition": "複数群の平均差を群間変動と群内変動の比で検定する。",
@@ -1128,7 +1221,8 @@
       "exam_criteria": "群平均を比較するか、群間・群内の二つの分散源を識別する。",
       "review_status": "draft",
       "review_notes": "初期生成版。数式・導出・範囲の専門レビュー未完了",
-      "revised_at": "2026-10-21T12:44:40.741600+00:00"
+      "revised_at": "2026-10-21T12:44:40.741600+00:00",
+      "formula_latex": "df_{\\mathrm{between}}=k-1,\\quad df_{\\mathrm{within}}=N-k"
     },
     "T095": {
       "intuition": "",
@@ -1140,7 +1234,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741607+00:00"
+      "revised_at": "2026-10-21T12:44:40.741607+00:00",
+      "formula_latex": ""
     },
     "T096": {
       "intuition": "",
@@ -1152,7 +1247,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741614+00:00"
+      "revised_at": "2026-10-21T12:44:40.741614+00:00",
+      "formula_latex": ""
     },
     "T097": {
       "intuition": "",
@@ -1164,7 +1260,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741619+00:00"
+      "revised_at": "2026-10-21T12:44:40.741619+00:00",
+      "formula_latex": ""
     },
     "T098": {
       "intuition": "",
@@ -1176,7 +1273,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741625+00:00"
+      "revised_at": "2026-10-21T12:44:40.741625+00:00",
+      "formula_latex": ""
     },
     "T099": {
       "intuition": "",
@@ -1188,7 +1286,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741631+00:00"
+      "revised_at": "2026-10-21T12:44:40.741631+00:00",
+      "formula_latex": ""
     },
     "T100": {
       "intuition": "",
@@ -1200,7 +1299,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741637+00:00"
+      "revised_at": "2026-10-21T12:44:40.741637+00:00",
+      "formula_latex": ""
     },
     "T101": {
       "intuition": "",
@@ -1212,7 +1312,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741643+00:00"
+      "revised_at": "2026-10-21T12:44:40.741643+00:00",
+      "formula_latex": ""
     },
     "T102": {
       "intuition": "",
@@ -1224,7 +1325,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741649+00:00"
+      "revised_at": "2026-10-21T12:44:40.741649+00:00",
+      "formula_latex": ""
     },
     "T103": {
       "intuition": "",
@@ -1236,7 +1338,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741655+00:00"
+      "revised_at": "2026-10-21T12:44:40.741655+00:00",
+      "formula_latex": ""
     },
     "T104": {
       "intuition": "非復元抽出では標本に含まれた要素が母集団残部に影響することを補正する。",
@@ -1248,7 +1351,8 @@
       "exam_criteria": "復元・非復元、分散・標準誤差、母分散の分母定義をまず確認。",
       "review_status": "draft",
       "review_notes": "初期生成版。数式・導出・範囲の専門レビュー未完了",
-      "revised_at": "2026-10-21T12:44:40.741661+00:00"
+      "revised_at": "2026-10-21T12:44:40.741661+00:00",
+      "formula_latex": "\\frac{N-n}{N-1}"
     },
     "T105": {
       "intuition": "",
@@ -1260,7 +1364,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741669+00:00"
+      "revised_at": "2026-10-21T12:44:40.741669+00:00",
+      "formula_latex": ""
     },
     "T106": {
       "intuition": "",
@@ -1272,7 +1377,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741675+00:00"
+      "revised_at": "2026-10-21T12:44:40.741675+00:00",
+      "formula_latex": ""
     },
     "T107": {
       "intuition": "",
@@ -1284,7 +1390,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741681+00:00"
+      "revised_at": "2026-10-21T12:44:40.741681+00:00",
+      "formula_latex": ""
     },
     "T108": {
       "intuition": "",
@@ -1296,7 +1403,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741687+00:00"
+      "revised_at": "2026-10-21T12:44:40.741687+00:00",
+      "formula_latex": ""
     },
     "T109": {
       "intuition": "",
@@ -1308,7 +1416,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741698+00:00"
+      "revised_at": "2026-10-21T12:44:40.741698+00:00",
+      "formula_latex": ""
     },
     "T110": {
       "intuition": "",
@@ -1320,7 +1429,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741704+00:00"
+      "revised_at": "2026-10-21T12:44:40.741704+00:00",
+      "formula_latex": ""
     },
     "T111": {
       "intuition": "主成分分析は元変数の線形結合で分散が最大になる方向を順に求める。共分散行列の固有ベクトルが主成分方向、固有値がその分散。第j主成分の寄与率は\\(\\frac{\\lambda_j}{\\sum_k\\lambda_k}\\)。標準化の有無で結果が変わる。",
@@ -1332,7 +1442,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741711+00:00"
+      "revised_at": "2026-10-21T12:44:40.741711+00:00",
+      "formula_latex": "\\mathrm{寄与率}_j=\\frac{\\lambda_j}{\\sum_k\\lambda_k}"
     },
     "T112": {
       "intuition": "",
@@ -1344,7 +1455,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741718+00:00"
+      "revised_at": "2026-10-21T12:44:40.741718+00:00",
+      "formula_latex": ""
     },
     "T113": {
       "intuition": "",
@@ -1356,7 +1468,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741724+00:00"
+      "revised_at": "2026-10-21T12:44:40.741724+00:00",
+      "formula_latex": ""
     },
     "T114": {
       "intuition": "",
@@ -1368,7 +1481,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741730+00:00"
+      "revised_at": "2026-10-21T12:44:40.741730+00:00",
+      "formula_latex": ""
     },
     "T115": {
       "intuition": "",
@@ -1380,7 +1494,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741736+00:00"
+      "revised_at": "2026-10-21T12:44:40.741736+00:00",
+      "formula_latex": ""
     },
     "T116": {
       "intuition": "",
@@ -1392,7 +1507,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741743+00:00"
+      "revised_at": "2026-10-21T12:44:40.741743+00:00",
+      "formula_latex": ""
     },
     "T117": {
       "intuition": "",
@@ -1404,7 +1520,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741749+00:00"
+      "revised_at": "2026-10-21T12:44:40.741749+00:00",
+      "formula_latex": ""
     },
     "T118": {
       "intuition": "K-meansは各観測をK個のクラスタに割り当て、クラスタ内平方和\\(\\sum_k\\sum_{i\\in C_k}\\lVert x_i-\\mu_k\\rVert^2\\)を最小化する。中心更新と再割当てを繰り返す。初期値に依存し局所解に留まることがある。",
@@ -1416,7 +1533,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741755+00:00"
+      "revised_at": "2026-10-21T12:44:40.741755+00:00",
+      "formula_latex": "\\min_{\\{C_k,\\mu_k\\}}\\sum_k\\sum_{i\\in C_k}\\lVert x_i-\\mu_k\\rVert^2"
     },
     "T119": {
       "intuition": "",
@@ -1428,7 +1546,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741762+00:00"
+      "revised_at": "2026-10-21T12:44:40.741762+00:00",
+      "formula_latex": ""
     },
     "T120": {
       "intuition": "",
@@ -1440,7 +1559,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741768+00:00"
+      "revised_at": "2026-10-21T12:44:40.741768+00:00",
+      "formula_latex": ""
     },
     "T121": {
       "intuition": "",
@@ -1452,7 +1572,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741774+00:00"
+      "revised_at": "2026-10-21T12:44:40.741774+00:00",
+      "formula_latex": ""
     },
     "T122": {
       "intuition": "",
@@ -1464,7 +1585,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741781+00:00"
+      "revised_at": "2026-10-21T12:44:40.741781+00:00",
+      "formula_latex": ""
     },
     "T123": {
       "intuition": "",
@@ -1476,7 +1598,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741787+00:00"
+      "revised_at": "2026-10-21T12:44:40.741787+00:00",
+      "formula_latex": ""
     },
     "T124": {
       "intuition": "",
@@ -1488,7 +1611,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741793+00:00"
+      "revised_at": "2026-10-21T12:44:40.741793+00:00",
+      "formula_latex": ""
     },
     "T125": {
       "intuition": "",
@@ -1500,7 +1624,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741799+00:00"
+      "revised_at": "2026-10-21T12:44:40.741799+00:00",
+      "formula_latex": ""
     },
     "T126": {
       "intuition": "",
@@ -1512,7 +1637,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741806+00:00"
+      "revised_at": "2026-10-21T12:44:40.741806+00:00",
+      "formula_latex": ""
     },
     "T127": {
       "intuition": "弱定常系列では平均が時点に依存せず、自己共分散\\(\\gamma(k)=\\operatorname{Cov}(X_t,X_{t-k})\\)がラグkのみに依存する。自己相関\\(\\rho(k)=\\gamma(k)/\\gamma(0)\\)。ラグ0では\\(\\gamma(0)=\\operatorname{Var}(X_t)\\)なので\\(\\rho(0)=1\\)（分散が正なら）。",
@@ -1524,7 +1650,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741812+00:00"
+      "revised_at": "2026-10-21T12:44:40.741812+00:00",
+      "formula_latex": "\\rho(k)=\\frac{\\gamma(k)}{\\gamma(0)},\\quad\\rho(0)=1"
     },
     "T128": {
       "intuition": "",
@@ -1536,7 +1663,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741821+00:00"
+      "revised_at": "2026-10-21T12:44:40.741821+00:00",
+      "formula_latex": ""
     },
     "T129": {
       "intuition": "",
@@ -1548,7 +1676,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741828+00:00"
+      "revised_at": "2026-10-21T12:44:40.741828+00:00",
+      "formula_latex": ""
     },
     "T130": {
       "intuition": "AR(1)は\\(X_t=\\phi X_{t-1}+\\varepsilon_t\\)（平均0の定常モデル）で、\\(|\\phi|<1\\)なら弱定常解を持つ。自己相関は\\(\\rho(k)=\\phi^k\\)。したがってラグ1はφ、ラグ2は\\(\\phi^2\\)。φが負なら奇数ラグで符号が交互になる。",
@@ -1560,7 +1689,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741834+00:00"
+      "revised_at": "2026-10-21T12:44:40.741834+00:00",
+      "formula_latex": "\\rho(k)=\\phi^k\\quad(|\\phi|<1)"
     },
     "T131": {
       "intuition": "",
@@ -1572,7 +1702,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741842+00:00"
+      "revised_at": "2026-10-21T12:44:40.741842+00:00",
+      "formula_latex": ""
     },
     "T132": {
       "intuition": "",
@@ -1584,7 +1715,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741848+00:00"
+      "revised_at": "2026-10-21T12:44:40.741848+00:00",
+      "formula_latex": ""
     },
     "T133": {
       "intuition": "",
@@ -1596,7 +1728,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741854+00:00"
+      "revised_at": "2026-10-21T12:44:40.741854+00:00",
+      "formula_latex": ""
     },
     "T134": {
       "intuition": "",
@@ -1608,7 +1741,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741860+00:00"
+      "revised_at": "2026-10-21T12:44:40.741860+00:00",
+      "formula_latex": ""
     },
     "T135": {
       "intuition": "",
@@ -1620,7 +1754,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741866+00:00"
+      "revised_at": "2026-10-21T12:44:40.741866+00:00",
+      "formula_latex": ""
     },
     "T136": {
       "intuition": "",
@@ -1632,7 +1767,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741873+00:00"
+      "revised_at": "2026-10-21T12:44:40.741873+00:00",
+      "formula_latex": ""
     },
     "T137": {
       "intuition": "",
@@ -1644,7 +1780,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741879+00:00"
+      "revised_at": "2026-10-21T12:44:40.741879+00:00",
+      "formula_latex": ""
     },
     "T138": {
       "intuition": "オッズはp/(1−p)、オッズ比は2群のオッズの比。2×2表を(a,b;c,d)と並べると\\(\\mathrm{OR}=\\frac{ad}{bc}\\)。\\(\\mathrm{OR}=1\\)はオッズに差がないことを意味するが、リスク比とは一般に異なる。",
@@ -1656,7 +1793,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741885+00:00"
+      "revised_at": "2026-10-21T12:44:40.741885+00:00",
+      "formula_latex": "\\mathrm{OR}=\\frac{ad}{bc}"
     },
     "T139": {
       "intuition": "",
@@ -1668,7 +1806,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741891+00:00"
+      "revised_at": "2026-10-21T12:44:40.741891+00:00",
+      "formula_latex": ""
     },
     "T140": {
       "intuition": "",
@@ -1680,7 +1819,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741898+00:00"
+      "revised_at": "2026-10-21T12:44:40.741898+00:00",
+      "formula_latex": ""
     },
     "T141": {
       "intuition": "",
@@ -1692,7 +1832,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741904+00:00"
+      "revised_at": "2026-10-21T12:44:40.741904+00:00",
+      "formula_latex": ""
     },
     "T142": {
       "intuition": "",
@@ -1704,7 +1845,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741910+00:00"
+      "revised_at": "2026-10-21T12:44:40.741910+00:00",
+      "formula_latex": ""
     },
     "T143": {
       "intuition": "",
@@ -1716,7 +1858,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741916+00:00"
+      "revised_at": "2026-10-21T12:44:40.741916+00:00",
+      "formula_latex": ""
     },
     "T144": {
       "intuition": "",
@@ -1728,7 +1871,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741922+00:00"
+      "revised_at": "2026-10-21T12:44:40.741922+00:00",
+      "formula_latex": ""
     },
     "T145": {
       "intuition": "",
@@ -1740,7 +1884,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741928+00:00"
+      "revised_at": "2026-10-21T12:44:40.741928+00:00",
+      "formula_latex": ""
     },
     "T146": {
       "intuition": "",
@@ -1752,7 +1897,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741934+00:00"
+      "revised_at": "2026-10-21T12:44:40.741934+00:00",
+      "formula_latex": ""
     },
     "T147": {
       "intuition": "",
@@ -1764,7 +1910,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741943+00:00"
+      "revised_at": "2026-10-21T12:44:40.741943+00:00",
+      "formula_latex": ""
     },
     "T148": {
       "intuition": "",
@@ -1776,7 +1923,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741951+00:00"
+      "revised_at": "2026-10-21T12:44:40.741951+00:00",
+      "formula_latex": ""
     },
     "T149": {
       "intuition": "",
@@ -1788,7 +1936,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741958+00:00"
+      "revised_at": "2026-10-21T12:44:40.741958+00:00",
+      "formula_latex": ""
     },
     "T150": {
       "intuition": "EM法は欠測・潜在変数がある尤度最大化で、EステップとMステップを交互に行う。Eステップは現在の母数で完全データ対数尤度の条件付き期待値Qを求め、MステップでQを最大化する。局所解に注意。",
@@ -1800,7 +1949,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741964+00:00"
+      "revised_at": "2026-10-21T12:44:40.741964+00:00",
+      "formula_latex": "Q(\\theta\\mid\\theta^{(t)})=E[\\log p(X,Z\\mid\\theta)\\mid X,\\theta^{(t)}]"
     },
     "T151": {
       "intuition": "AICはモデルの当てはまりと複雑さのバランスを取る指標。\\(\\mathrm{AIC}=-2\\log L(\\hat\\theta)+2k\\)（kは推定パラメータ数）。同じデータ・比較可能な尤度に対して値が小さいモデルを選ぶ。絶対的な適合度ではない。",
@@ -1812,7 +1962,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741971+00:00"
+      "revised_at": "2026-10-21T12:44:40.741971+00:00",
+      "formula_latex": "\\mathrm{AIC}=-2\\log L(\\hat\\theta)+2k"
     },
     "T152": {
       "intuition": "BICは\\(\\mathrm{BIC}=-2\\log L(\\hat\\theta)+k\\log n\\)。AICの2kより標本数が大きいと複雑なモデルへの罰則が強くなることが多い。比較対象の尤度・データの整合性を確認して小さい値を選ぶ。",
@@ -1824,7 +1975,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741978+00:00"
+      "revised_at": "2026-10-21T12:44:40.741978+00:00",
+      "formula_latex": "\\mathrm{BIC}=-2\\log L(\\hat\\theta)+k\\log n"
     },
     "T153": {
       "intuition": "",
@@ -1836,7 +1988,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741985+00:00"
+      "revised_at": "2026-10-21T12:44:40.741985+00:00",
+      "formula_latex": ""
     },
     "T154": {
       "intuition": "",
@@ -1848,7 +2001,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741992+00:00"
+      "revised_at": "2026-10-21T12:44:40.741992+00:00",
+      "formula_latex": ""
     },
     "T155": {
       "intuition": "",
@@ -1860,7 +2014,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.741998+00:00"
+      "revised_at": "2026-10-21T12:44:40.741998+00:00",
+      "formula_latex": ""
     },
     "T156": {
       "intuition": "",
@@ -1872,7 +2027,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742004+00:00"
+      "revised_at": "2026-10-21T12:44:40.742004+00:00",
+      "formula_latex": ""
     },
     "T157": {
       "intuition": "",
@@ -1884,7 +2040,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742023+00:00"
+      "revised_at": "2026-10-21T12:44:40.742023+00:00",
+      "formula_latex": ""
     },
     "T158": {
       "intuition": "メトロポリス・ヘイスティングス法は目標分布πからサンプルするMCMC。提案q(θ'|θ)に対し受容率は\\(\\min\\{1,\\frac{\\pi(\\theta')q(\\theta\\mid\\theta')}{\\pi(\\theta)q(\\theta'\\mid\\theta)}\\}\\)。対称提案ならqが相殺され、πの比だけになる。",
@@ -1896,7 +2053,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742039+00:00"
+      "revised_at": "2026-10-21T12:44:40.742039+00:00",
+      "formula_latex": "\\alpha=\\min\\left(1,\\frac{\\pi(\\theta')q(\\theta\\mid\\theta')}{\\pi(\\theta)q(\\theta'\\mid\\theta)}\\right)"
     },
     "T159": {
       "intuition": "",
@@ -1908,7 +2066,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742050+00:00"
+      "revised_at": "2026-10-21T12:44:40.742050+00:00",
+      "formula_latex": ""
     },
     "T160": {
       "intuition": "",
@@ -1920,7 +2079,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742061+00:00"
+      "revised_at": "2026-10-21T12:44:40.742061+00:00",
+      "formula_latex": ""
     },
     "T161": {
       "intuition": "",
@@ -1932,7 +2092,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742068+00:00"
+      "revised_at": "2026-10-21T12:44:40.742068+00:00",
+      "formula_latex": ""
     },
     "T162": {
       "intuition": "",
@@ -1944,7 +2105,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742074+00:00"
+      "revised_at": "2026-10-21T12:44:40.742074+00:00",
+      "formula_latex": ""
     },
     "T163": {
       "intuition": "",
@@ -1956,7 +2118,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742081+00:00"
+      "revised_at": "2026-10-21T12:44:40.742081+00:00",
+      "formula_latex": ""
     },
     "T164": {
       "intuition": "",
@@ -1968,7 +2131,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742089+00:00"
+      "revised_at": "2026-10-21T12:44:40.742089+00:00",
+      "formula_latex": ""
     },
     "T165": {
       "intuition": "",
@@ -1980,7 +2144,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742096+00:00"
+      "revised_at": "2026-10-21T12:44:40.742096+00:00",
+      "formula_latex": ""
     },
     "T166": {
       "intuition": "ノンパラメトリック・ブートストラップは、観測済みn点を経験分布と見なし、復元抽出でサイズnの標本を何度も作る。各標本で統計量を計算して標準誤差や区間を近似する。依存データにはブロック法などが必要。",
@@ -1992,7 +2157,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742102+00:00"
+      "revised_at": "2026-10-21T12:44:40.742102+00:00",
+      "formula_latex": "X_1^*,\\ldots,X_n^*\\overset{\\mathrm{iid}}{\\sim}\\widehat F_n"
     },
     "T167": {
       "intuition": "DAGは因果関係の仮定を有向非巡回グラフで表す。\\(X\\to Z\\leftarrow Y\\)のZはコライダーで、通常この経路は閉じている。しかしZで条件付けたりZの子孫で選択したりすると経路が開き、XとYに見かけの関連が生じうる。",
@@ -2004,7 +2170,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742111+00:00"
+      "revised_at": "2026-10-21T12:44:40.742111+00:00",
+      "formula_latex": "X\\rightarrow Z\\leftarrow Y"
     },
     "T168": {
       "intuition": "交絡は、処置Xと結果Yの共通原因Zにより、単純なX–Yの関連が因果効果とずれる現象。DAGで\\(Z\\to X\\)かつ\\(Z\\to Y\\)ならバックドア経路\\(X\\leftarrow Z\\to Y\\)が開く。適切な調整でこの経路を閉じることを考える。",
@@ -2016,7 +2183,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742120+00:00"
+      "revised_at": "2026-10-21T12:44:40.742120+00:00",
+      "formula_latex": "X\\leftarrow Z\\rightarrow Y"
     },
     "T169": {
       "intuition": "",
@@ -2028,7 +2196,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742129+00:00"
+      "revised_at": "2026-10-21T12:44:40.742129+00:00",
+      "formula_latex": ""
     },
     "T170": {
       "intuition": "",
@@ -2040,7 +2209,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742135+00:00"
+      "revised_at": "2026-10-21T12:44:40.742135+00:00",
+      "formula_latex": ""
     },
     "T171": {
       "intuition": "",
@@ -2052,7 +2222,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742142+00:00"
+      "revised_at": "2026-10-21T12:44:40.742142+00:00",
+      "formula_latex": ""
     },
     "T172": {
       "intuition": "",
@@ -2064,7 +2235,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742148+00:00"
+      "revised_at": "2026-10-21T12:44:40.742148+00:00",
+      "formula_latex": ""
     },
     "T173": {
       "intuition": "",
@@ -2076,7 +2248,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742154+00:00"
+      "revised_at": "2026-10-21T12:44:40.742154+00:00",
+      "formula_latex": ""
     },
     "T174": {
       "intuition": "",
@@ -2088,7 +2261,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742161+00:00"
+      "revised_at": "2026-10-21T12:44:40.742161+00:00",
+      "formula_latex": ""
     },
     "T175": {
       "intuition": "",
@@ -2100,7 +2274,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742167+00:00"
+      "revised_at": "2026-10-21T12:44:40.742167+00:00",
+      "formula_latex": ""
     },
     "T176": {
       "intuition": "",
@@ -2112,7 +2287,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742174+00:00"
+      "revised_at": "2026-10-21T12:44:40.742174+00:00",
+      "formula_latex": ""
     },
     "T177": {
       "intuition": "",
@@ -2124,7 +2300,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742180+00:00"
+      "revised_at": "2026-10-21T12:44:40.742180+00:00",
+      "formula_latex": ""
     },
     "T178": {
       "intuition": "",
@@ -2136,7 +2313,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742186+00:00"
+      "revised_at": "2026-10-21T12:44:40.742186+00:00",
+      "formula_latex": ""
     },
     "T179": {
       "intuition": "",
@@ -2148,7 +2326,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742192+00:00"
+      "revised_at": "2026-10-21T12:44:40.742192+00:00",
+      "formula_latex": ""
     },
     "T180": {
       "intuition": "",
@@ -2160,7 +2339,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742200+00:00"
+      "revised_at": "2026-10-21T12:44:40.742200+00:00",
+      "formula_latex": ""
     },
     "T181": {
       "intuition": "",
@@ -2172,7 +2352,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742207+00:00"
+      "revised_at": "2026-10-21T12:44:40.742207+00:00",
+      "formula_latex": ""
     },
     "T182": {
       "intuition": "",
@@ -2184,7 +2365,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742213+00:00"
+      "revised_at": "2026-10-21T12:44:40.742213+00:00",
+      "formula_latex": ""
     },
     "T183": {
       "intuition": "",
@@ -2196,7 +2378,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742223+00:00"
+      "revised_at": "2026-10-21T12:44:40.742223+00:00",
+      "formula_latex": ""
     },
     "T184": {
       "intuition": "",
@@ -2208,7 +2391,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742229+00:00"
+      "revised_at": "2026-10-21T12:44:40.742229+00:00",
+      "formula_latex": ""
     },
     "T185": {
       "intuition": "",
@@ -2220,7 +2404,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742236+00:00"
+      "revised_at": "2026-10-21T12:44:40.742236+00:00",
+      "formula_latex": ""
     },
     "T186": {
       "intuition": "",
@@ -2232,7 +2417,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742242+00:00"
+      "revised_at": "2026-10-21T12:44:40.742242+00:00",
+      "formula_latex": ""
     },
     "T187": {
       "intuition": "",
@@ -2244,7 +2430,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742248+00:00"
+      "revised_at": "2026-10-21T12:44:40.742248+00:00",
+      "formula_latex": ""
     },
     "T188": {
       "intuition": "",
@@ -2256,7 +2443,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742255+00:00"
+      "revised_at": "2026-10-21T12:44:40.742255+00:00",
+      "formula_latex": ""
     },
     "T189": {
       "intuition": "",
@@ -2268,7 +2456,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742261+00:00"
+      "revised_at": "2026-10-21T12:44:40.742261+00:00",
+      "formula_latex": ""
     },
     "T190": {
       "intuition": "",
@@ -2280,7 +2469,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742267+00:00"
+      "revised_at": "2026-10-21T12:44:40.742267+00:00",
+      "formula_latex": ""
     },
     "T191": {
       "intuition": "",
@@ -2292,7 +2482,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742274+00:00"
+      "revised_at": "2026-10-21T12:44:40.742274+00:00",
+      "formula_latex": ""
     },
     "T192": {
       "intuition": "",
@@ -2304,7 +2495,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742280+00:00"
+      "revised_at": "2026-10-21T12:44:40.742280+00:00",
+      "formula_latex": ""
     },
     "T193": {
       "intuition": "",
@@ -2316,7 +2508,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742286+00:00"
+      "revised_at": "2026-10-21T12:44:40.742286+00:00",
+      "formula_latex": ""
     },
     "T194": {
       "intuition": "",
@@ -2328,7 +2521,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742293+00:00"
+      "revised_at": "2026-10-21T12:44:40.742293+00:00",
+      "formula_latex": ""
     },
     "T195": {
       "intuition": "",
@@ -2340,7 +2534,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742299+00:00"
+      "revised_at": "2026-10-21T12:44:40.742299+00:00",
+      "formula_latex": ""
     },
     "T196": {
       "intuition": "",
@@ -2352,7 +2547,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742305+00:00"
+      "revised_at": "2026-10-21T12:44:40.742305+00:00",
+      "formula_latex": ""
     },
     "T197": {
       "intuition": "",
@@ -2364,7 +2560,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742312+00:00"
+      "revised_at": "2026-10-21T12:44:40.742312+00:00",
+      "formula_latex": ""
     },
     "T198": {
       "intuition": "",
@@ -2376,7 +2573,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742318+00:00"
+      "revised_at": "2026-10-21T12:44:40.742318+00:00",
+      "formula_latex": ""
     },
     "T199": {
       "intuition": "",
@@ -2388,7 +2586,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742324+00:00"
+      "revised_at": "2026-10-21T12:44:40.742324+00:00",
+      "formula_latex": ""
     },
     "T200": {
       "intuition": "",
@@ -2400,7 +2599,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742331+00:00"
+      "revised_at": "2026-10-21T12:44:40.742331+00:00",
+      "formula_latex": ""
     },
     "T201": {
       "intuition": "",
@@ -2412,7 +2612,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742337+00:00"
+      "revised_at": "2026-10-21T12:44:40.742337+00:00",
+      "formula_latex": ""
     },
     "T202": {
       "intuition": "",
@@ -2424,7 +2625,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742343+00:00"
+      "revised_at": "2026-10-21T12:44:40.742343+00:00",
+      "formula_latex": ""
     },
     "T203": {
       "intuition": "",
@@ -2436,7 +2638,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742349+00:00"
+      "revised_at": "2026-10-21T12:44:40.742349+00:00",
+      "formula_latex": ""
     },
     "T204": {
       "intuition": "",
@@ -2448,7 +2651,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742355+00:00"
+      "revised_at": "2026-10-21T12:44:40.742355+00:00",
+      "formula_latex": ""
     },
     "T205": {
       "intuition": "",
@@ -2460,7 +2664,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742362+00:00"
+      "revised_at": "2026-10-21T12:44:40.742362+00:00",
+      "formula_latex": ""
     },
     "T206": {
       "intuition": "",
@@ -2472,7 +2677,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742368+00:00"
+      "revised_at": "2026-10-21T12:44:40.742368+00:00",
+      "formula_latex": ""
     },
     "T207": {
       "intuition": "",
@@ -2484,7 +2690,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742374+00:00"
+      "revised_at": "2026-10-21T12:44:40.742374+00:00",
+      "formula_latex": ""
     },
     "T208": {
       "intuition": "",
@@ -2496,7 +2703,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742381+00:00"
+      "revised_at": "2026-10-21T12:44:40.742381+00:00",
+      "formula_latex": ""
     },
     "T209": {
       "intuition": "",
@@ -2508,7 +2716,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742392+00:00"
+      "revised_at": "2026-10-21T12:44:40.742392+00:00",
+      "formula_latex": ""
     },
     "T210": {
       "intuition": "",
@@ -2520,7 +2729,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742400+00:00"
+      "revised_at": "2026-10-21T12:44:40.742400+00:00",
+      "formula_latex": ""
     },
     "T211": {
       "intuition": "",
@@ -2532,7 +2742,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742407+00:00"
+      "revised_at": "2026-10-21T12:44:40.742407+00:00",
+      "formula_latex": ""
     },
     "T212": {
       "intuition": "",
@@ -2544,7 +2755,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742413+00:00"
+      "revised_at": "2026-10-21T12:44:40.742413+00:00",
+      "formula_latex": ""
     },
     "T213": {
       "intuition": "",
@@ -2556,7 +2768,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742420+00:00"
+      "revised_at": "2026-10-21T12:44:40.742420+00:00",
+      "formula_latex": ""
     },
     "T214": {
       "intuition": "",
@@ -2568,7 +2781,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742426+00:00"
+      "revised_at": "2026-10-21T12:44:40.742426+00:00",
+      "formula_latex": ""
     },
     "T215": {
       "intuition": "",
@@ -2580,7 +2794,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742432+00:00"
+      "revised_at": "2026-10-21T12:44:40.742432+00:00",
+      "formula_latex": ""
     },
     "T216": {
       "intuition": "",
@@ -2592,7 +2807,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742439+00:00"
+      "revised_at": "2026-10-21T12:44:40.742439+00:00",
+      "formula_latex": ""
     },
     "T217": {
       "intuition": "",
@@ -2604,7 +2820,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742445+00:00"
+      "revised_at": "2026-10-21T12:44:40.742445+00:00",
+      "formula_latex": ""
     },
     "T218": {
       "intuition": "",
@@ -2616,7 +2833,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742451+00:00"
+      "revised_at": "2026-10-21T12:44:40.742451+00:00",
+      "formula_latex": ""
     },
     "T219": {
       "intuition": "",
@@ -2628,7 +2846,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742458+00:00"
+      "revised_at": "2026-10-21T12:44:40.742458+00:00",
+      "formula_latex": ""
     },
     "T220": {
       "intuition": "",
@@ -2640,7 +2859,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742469+00:00"
+      "revised_at": "2026-10-21T12:44:40.742469+00:00",
+      "formula_latex": ""
     },
     "T221": {
       "intuition": "",
@@ -2652,7 +2872,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742476+00:00"
+      "revised_at": "2026-10-21T12:44:40.742476+00:00",
+      "formula_latex": ""
     },
     "T222": {
       "intuition": "",
@@ -2664,7 +2885,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742482+00:00"
+      "revised_at": "2026-10-21T12:44:40.742482+00:00",
+      "formula_latex": ""
     },
     "T223": {
       "intuition": "",
@@ -2676,7 +2898,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742488+00:00"
+      "revised_at": "2026-10-21T12:44:40.742488+00:00",
+      "formula_latex": ""
     },
     "T224": {
       "intuition": "",
@@ -2688,7 +2911,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742495+00:00"
+      "revised_at": "2026-10-21T12:44:40.742495+00:00",
+      "formula_latex": ""
     },
     "T225": {
       "intuition": "",
@@ -2700,7 +2924,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742501+00:00"
+      "revised_at": "2026-10-21T12:44:40.742501+00:00",
+      "formula_latex": ""
     },
     "T226": {
       "intuition": "",
@@ -2712,7 +2937,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742507+00:00"
+      "revised_at": "2026-10-21T12:44:40.742507+00:00",
+      "formula_latex": ""
     },
     "T227": {
       "intuition": "",
@@ -2724,7 +2950,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742514+00:00"
+      "revised_at": "2026-10-21T12:44:40.742514+00:00",
+      "formula_latex": ""
     },
     "T228": {
       "intuition": "",
@@ -2736,7 +2963,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742520+00:00"
+      "revised_at": "2026-10-21T12:44:40.742520+00:00",
+      "formula_latex": ""
     },
     "T229": {
       "intuition": "",
@@ -2748,7 +2976,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742527+00:00"
+      "revised_at": "2026-10-21T12:44:40.742527+00:00",
+      "formula_latex": ""
     },
     "T230": {
       "intuition": "",
@@ -2760,7 +2989,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742533+00:00"
+      "revised_at": "2026-10-21T12:44:40.742533+00:00",
+      "formula_latex": ""
     },
     "T231": {
       "intuition": "",
@@ -2772,7 +3002,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742540+00:00"
+      "revised_at": "2026-10-21T12:44:40.742540+00:00",
+      "formula_latex": ""
     },
     "T232": {
       "intuition": "",
@@ -2784,7 +3015,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742546+00:00"
+      "revised_at": "2026-10-21T12:44:40.742546+00:00",
+      "formula_latex": ""
     },
     "T233": {
       "intuition": "",
@@ -2796,7 +3028,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742552+00:00"
+      "revised_at": "2026-10-21T12:44:40.742552+00:00",
+      "formula_latex": ""
     },
     "T234": {
       "intuition": "",
@@ -2808,7 +3041,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742558+00:00"
+      "revised_at": "2026-10-21T12:44:40.742558+00:00",
+      "formula_latex": ""
     },
     "T235": {
       "intuition": "",
@@ -2820,7 +3054,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742567+00:00"
+      "revised_at": "2026-10-21T12:44:40.742567+00:00",
+      "formula_latex": ""
     },
     "T236": {
       "intuition": "",
@@ -2832,7 +3067,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742573+00:00"
+      "revised_at": "2026-10-21T12:44:40.742573+00:00",
+      "formula_latex": ""
     },
     "T237": {
       "intuition": "",
@@ -2844,7 +3080,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742580+00:00"
+      "revised_at": "2026-10-21T12:44:40.742580+00:00",
+      "formula_latex": ""
     },
     "T238": {
       "intuition": "",
@@ -2856,7 +3093,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742586+00:00"
+      "revised_at": "2026-10-21T12:44:40.742586+00:00",
+      "formula_latex": ""
     },
     "T239": {
       "intuition": "",
@@ -2868,7 +3106,8 @@
       "exam_criteria": "",
       "review_status": "needs_revision",
       "review_notes": "体系的な初回講義は未作成。旧ミニ講義がある場合は暫定掲載。",
-      "revised_at": "2026-10-21T12:44:40.742593+00:00"
+      "revised_at": "2026-10-21T12:44:40.742593+00:00",
+      "formula_latex": ""
     }
   }
 }
