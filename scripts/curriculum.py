@@ -133,7 +133,7 @@ def verify():
             entry=lectures[tid]
             assert entry["review_status"]=="draft" or entry["review_status"] in ("in_review","approved","needs_revision")
             assert any("\\(" in entry[field] and "\\)" in entry[field] for field in ("definition","derivation","example")), ("Missing KaTeX delimiters",tid)
-        assert isinstance(progress.get("history"), list) and isinstance(progress.get("total_questions"), int), "Invalid progress schema"
+    assert isinstance(progress.get("history"), list) and isinstance(progress.get("total_questions"), int), "Invalid progress schema"
     print(f"OK: sqlite, JSON references, active queue={len(active)}, legacy history={len(progress['history'])}")
     db.close()
 if __name__=="__main__":
