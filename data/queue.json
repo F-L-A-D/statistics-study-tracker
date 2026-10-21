@@ -2,7 +2,7 @@
   "schema_version": 1,
   "queue_version": 1,
   "updated_at": "2026-10-21",
-  "target_pending_sets": 10,
+  "target_pending_sets": 3,
   "questions_per_set": 5,
   "refill_policy": {
     "new_target": 3,
@@ -22,7 +22,9 @@
     "method": "explicit validated enrollment; not previously a queue",
     "legacy_question_count": 50,
     "legacy_progress_total": 116,
-    "legacy_progress_history_records": 5
+    "legacy_progress_history_records": 5,
+    "sqlite_mvp": "Queue active window restricted to 3; seven legacy sets retained as backlog",
+    "legacy_backlog_sets": 7
   },
   "sets": [
     {
@@ -82,7 +84,7 @@
     {
       "set_id": "S0004",
       "sequence": 4,
-      "status": "pending",
+      "status": "backlog",
       "origin": "migrated_legacy",
       "generated_at": null,
       "enqueued_at": "2026-10-21",
@@ -100,7 +102,7 @@
     {
       "set_id": "S0005",
       "sequence": 5,
-      "status": "pending",
+      "status": "backlog",
       "origin": "migrated_legacy",
       "generated_at": null,
       "enqueued_at": "2026-10-21",
@@ -118,7 +120,7 @@
     {
       "set_id": "S0006",
       "sequence": 6,
-      "status": "pending",
+      "status": "backlog",
       "origin": "migrated_legacy",
       "generated_at": null,
       "enqueued_at": "2026-10-21",
@@ -136,7 +138,7 @@
     {
       "set_id": "S0007",
       "sequence": 7,
-      "status": "pending",
+      "status": "backlog",
       "origin": "migrated_legacy",
       "generated_at": null,
       "enqueued_at": "2026-10-21",
@@ -154,7 +156,7 @@
     {
       "set_id": "S0008",
       "sequence": 8,
-      "status": "pending",
+      "status": "backlog",
       "origin": "migrated_legacy",
       "generated_at": null,
       "enqueued_at": "2026-10-21",
@@ -172,7 +174,7 @@
     {
       "set_id": "S0009",
       "sequence": 9,
-      "status": "pending",
+      "status": "backlog",
       "origin": "migrated_legacy",
       "generated_at": null,
       "enqueued_at": "2026-10-21",
@@ -190,7 +192,7 @@
     {
       "set_id": "S0010",
       "sequence": 10,
-      "status": "pending",
+      "status": "backlog",
       "origin": "migrated_legacy",
       "generated_at": null,
       "enqueued_at": "2026-10-21",
