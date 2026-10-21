@@ -3,6 +3,8 @@
   "version": "2026-10-21-math-normalized-50",
   "status": "ready",
   "target_date": "2027-01-16",
+  "policy": "5問/日×10日分。出題順はdayに従う。問題と解答は表示上分離するが公開JSONに解答があるため技術的には閲覧可能。",
+  "lecture_policy": "各問の講義は概念、公式・条件、適用上の注意を具体的に説明。典型ミスはpitfallに分離。",
   "days": [
     {
       "day": 1,
@@ -116,7 +118,8 @@
       "answer": "\\(\\frac{0.08}{0.08+0.09}=\\frac8{17}\\approx47.1\\%\\)",
       "explanation": "全確率の公式で陽性確率を求める。",
       "pitfall": "感度と陽性的中率を混同しない。",
-      "formula_latex": "P(A\\mid B)=\\frac{P(B\\mid A)P(A)}{P(B)}"
+      "formula_latex": "P(A\\mid B)=\\frac{P(B\\mid A)P(A)}{P(B)}",
+      "lecture_id": "T003"
     },
     {
       "id": "Q002",
@@ -128,7 +131,8 @@
       "answer": "\\(5\\times0.2\\times0.8^4=0.4096\\)",
       "explanation": "二項確率質量関数。",
       "pitfall": "成功回数の順序を区別しないため組合せ係数を忘れない。",
-      "formula_latex": "P(X=k)=\\binom nk p^k(1-p)^{n-k}"
+      "formula_latex": "P(X=k)=\\binom nk p^k(1-p)^{n-k}",
+      "lecture_id": "T023"
     },
     {
       "id": "Q003",
@@ -140,7 +144,8 @@
       "answer": "0.7",
       "explanation": "対数尤度をpで微分。",
       "pitfall": "確率を最大化するのであって、事後確率を最大化するMAP推定とは異なる。",
-      "formula_latex": "\\hat p=\\frac{\\sum_i X_i}{n}"
+      "formula_latex": "\\hat p=\\frac{\\sum_i X_i}{n}",
+      "lecture_id": "T042"
     },
     {
       "id": "Q004",
@@ -152,7 +157,8 @@
       "answer": "帰無仮説を棄却する",
       "explanation": "p値は帰無仮説が正しい確率ではない。",
       "pitfall": "p値を『帰無仮説が正しい確率』と解釈しない。",
-      "formula_latex": "p\\leq\\alpha\\ \\Longrightarrow\\ H_0\\text{を棄却}"
+      "formula_latex": "p\\leq\\alpha\\ \\Longrightarrow\\ H_0\\text{を棄却}",
+      "lecture_id": "T054"
     },
     {
       "id": "Q005",
@@ -164,7 +170,8 @@
       "answer": "+6",
       "explanation": "偏回帰係数×変化量。",
       "pitfall": "他の変数を固定するという条件を落とさない。",
-      "formula_latex": "\\Delta\\hat y=\\beta_1\\Delta x_1"
+      "formula_latex": "\\Delta\\hat y=\\beta_1\\Delta x_1",
+      "lecture_id": "T077"
     },
     {
       "id": "Q006",
@@ -176,7 +183,8 @@
       "answer": "0.4",
       "explanation": "同時確率÷条件事象の確率。",
       "pitfall": "P(A|B)とP(B|A)を取り違えない。",
-      "formula_latex": "P(A\\mid B)=\\frac{P(A\\cap B)}{P(B)}"
+      "formula_latex": "P(A\\mid B)=\\frac{P(A\\cap B)}{P(B)}",
+      "lecture_id": "T001"
     },
     {
       "id": "Q007",
@@ -188,7 +196,8 @@
       "answer": "\\(e^{-2}\\approx0.1353\\)",
       "explanation": "確率質量関数。",
       "pitfall": "λは対象期間全体の期待回数。",
-      "formula_latex": "P(X=k)=\\frac{e^{-\\lambda}\\lambda^k}{k!}"
+      "formula_latex": "P(X=k)=\\frac{e^{-\\lambda}\\lambda^k}{k!}",
+      "lecture_id": "T025"
     },
     {
       "id": "Q008",
@@ -200,7 +209,8 @@
       "answer": "\\(\\hat\\lambda=4\\)",
       "explanation": "母平均λと標本平均を等置。",
       "pitfall": "最尤推定と一致することもあるが、一般には別手法。",
-      "formula_latex": "\\hat\\lambda=\\overline X"
+      "formula_latex": "\\hat\\lambda=\\overline X",
+      "lecture_id": "T043"
     },
     {
       "id": "Q009",
@@ -212,7 +222,8 @@
       "answer": "\\(1-\\beta\\)",
       "explanation": "対立仮説の下で棄却する確率。",
       "pitfall": "検出力を1−αとしない。",
-      "formula_latex": "\\mathrm{Power}=1-\\beta"
+      "formula_latex": "\\mathrm{Power}=1-\\beta",
+      "lecture_id": "T057"
     },
     {
       "id": "Q010",
@@ -224,7 +235,8 @@
       "answer": "2、12",
       "explanation": "\\(k-1\\)、\\(N-k\\)。",
       "pitfall": "自由度は各群の標本数ではなく群数と総標本数で決まる。",
-      "formula_latex": "df_{\\mathrm{between}}=k-1,\\quad df_{\\mathrm{within}}=N-k"
+      "formula_latex": "df_{\\mathrm{between}}=k-1,\\quad df_{\\mathrm{within}}=N-k",
+      "lecture_id": "T094"
     },
     {
       "id": "Q011",
@@ -236,7 +248,8 @@
       "answer": "7",
       "explanation": "期待値の線形性。",
       "pitfall": "期待値の和と積の性質を混同しない。",
-      "formula_latex": "E[aX+bY+c]=aE[X]+bE[Y]+c"
+      "formula_latex": "E[aX+bY+c]=aE[X]+bE[Y]+c",
+      "lecture_id": "T007"
     },
     {
       "id": "Q012",
@@ -248,7 +261,8 @@
       "answer": "\\((X-10)/2\\)",
       "explanation": "第2引数は分散。",
       "pitfall": "N(10,4)の分母は4ではなく2。",
-      "formula_latex": "Z=\\frac{X-\\mu}{\\sigma}"
+      "formula_latex": "Z=\\frac{X-\\mu}{\\sigma}",
+      "lecture_id": "T030"
     },
     {
       "id": "Q013",
@@ -260,7 +274,8 @@
       "answer": "\\(10\\pm1.96\\times1=[8.04,11.96]\\)",
       "explanation": "既知分散の正規近似。",
       "pitfall": "標本数nではなく\\(\\sqrt n\\)で割る。母分散未知・小標本ではt分布を検討。",
-      "formula_latex": "\\overline X\\pm z_{0.975}\\frac{\\sigma}{\\sqrt n}"
+      "formula_latex": "\\overline X\\pm z_{0.975}\\frac{\\sigma}{\\sqrt n}",
+      "lecture_id": "T051"
     },
     {
       "id": "Q014",
@@ -272,7 +287,8 @@
       "answer": "\\(0\\leq\\Lambda\\leq1\\)",
       "explanation": "制約付き最大尤度は全体最大尤度以下。",
       "pitfall": "分子と分母を逆にしない。",
-      "formula_latex": "\\Lambda=\\frac{\\sup_{\\theta\\in\\Theta_0}L(\\theta)}{\\sup_{\\theta\\in\\Theta}L(\\theta)}"
+      "formula_latex": "\\Lambda=\\frac{\\sup_{\\theta\\in\\Theta_0}L(\\theta)}{\\sup_{\\theta\\in\\Theta}L(\\theta)}",
+      "lecture_id": "T062"
     },
     {
       "id": "Q015",
@@ -284,7 +300,8 @@
       "answer": "0.9",
       "explanation": "非復元抽出時の補正。",
       "pitfall": "分散への補正係数と標準誤差への補正係数を混同しない。",
-      "formula_latex": "\\frac{N-n}{N-1}"
+      "formula_latex": "\\frac{N-n}{N-1}",
+      "lecture_id": "T104"
     },
     {
       "id": "Q016",
@@ -296,7 +313,8 @@
       "answer": "36",
       "explanation": "定数加算で分散不変、係数の二乗倍。",
       "pitfall": "係数aを二乗し忘れない。",
-      "formula_latex": "\\mathrm{Var}(aX+b)=a^2\\mathrm{Var}(X)"
+      "formula_latex": "\\mathrm{Var}(aX+b)=a^2\\mathrm{Var}(X)",
+      "lecture_id": "T008"
     },
     {
       "id": "Q017",
@@ -308,7 +326,8 @@
       "answer": "1/2",
       "explanation": "rateパラメータの逆数。",
       "pitfall": "rate λとscale 1/λのパラメータ化を確認する。",
-      "formula_latex": "E[X]=\\frac1\\lambda,\\quad f(x)=\\lambda e^{-\\lambda x}"
+      "formula_latex": "E[X]=\\frac1\\lambda,\\quad f(x)=\\lambda e^{-\\lambda x}",
+      "lecture_id": "T031"
     },
     {
       "id": "Q018",
@@ -320,7 +339,8 @@
       "answer": "成功回数\\(\\sum_iX_i\\)",
       "explanation": "尤度が成功回数のみに依存。",
       "pitfall": "十分性は不偏性や効率性とは別の概念。",
-      "formula_latex": "L(p)=p^{\\sum X_i}(1-p)^{n-\\sum X_i}"
+      "formula_latex": "L(p)=p^{\\sum X_i}(1-p)^{n-\\sum X_i}",
+      "lecture_id": "T040"
     },
     {
       "id": "Q019",
@@ -332,7 +352,8 @@
       "answer": "Welchのt検定",
       "explanation": "等分散を仮定しない。",
       "pitfall": "等分散を仮定するプールされたt検定と区別する。",
-      "formula_latex": "t=\\frac{\\overline X-\\overline Y}{\\sqrt{s_1^2/n_1+s_2^2/n_2}}"
+      "formula_latex": "t=\\frac{\\overline X-\\overline Y}{\\sqrt{s_1^2/n_1+s_2^2/n_2}}",
+      "lecture_id": "T065"
     },
     {
       "id": "Q020",
@@ -344,7 +365,8 @@
       "answer": "\\(\\frac45=80\\%\\)",
       "explanation": "固有値÷固有値総和。",
       "pitfall": "固有値の合計で割り、最大固有値が第1主成分。",
-      "formula_latex": "\\mathrm{寄与率}_j=\\frac{\\lambda_j}{\\sum_k\\lambda_k}"
+      "formula_latex": "\\mathrm{寄与率}_j=\\frac{\\lambda_j}{\\sum_k\\lambda_k}",
+      "lecture_id": "T111"
     },
     {
       "id": "Q021",
@@ -356,7 +378,8 @@
       "answer": "−12",
       "explanation": "\\(\\operatorname{Cov}(aX,bY)=ab\\operatorname{Cov}(X,Y)\\)。",
       "pitfall": "Var(aX)のa²とCov(aX,cY)のacを区別する。",
-      "formula_latex": "\\mathrm{Cov}(aX+b,cY+d)=ac\\,\\mathrm{Cov}(X,Y)"
+      "formula_latex": "\\mathrm{Cov}(aX+b,cY+d)=ac\\,\\mathrm{Cov}(X,Y)",
+      "lecture_id": "T009"
     },
     {
       "id": "Q022",
@@ -368,7 +391,8 @@
       "answer": "1.5",
       "explanation": "shape/rate。",
       "pitfall": "rateとscaleの取り違えが典型的な失点原因。",
-      "formula_latex": "E[X]=\\frac{\\alpha}{\\beta}\\quad(\\mathrm{rate}\\ \\beta)"
+      "formula_latex": "E[X]=\\frac{\\alpha}{\\beta}\\quad(\\mathrm{rate}\\ \\beta)",
+      "lecture_id": "T032"
     },
     {
       "id": "Q023",
@@ -380,7 +404,8 @@
       "answer": "\\(\\frac n{\\sigma^2}\\)",
       "explanation": "対数尤度の2階微分の期待値。",
       "pitfall": "標本数n倍されるのは独立観測の情報量。",
-      "formula_latex": "I(\\mu)=\\frac n{\\sigma^2}"
+      "formula_latex": "I(\\mu)=\\frac n{\\sigma^2}",
+      "lecture_id": "T049"
     },
     {
       "id": "Q024",
@@ -392,7 +417,8 @@
       "answer": "標準正規分布",
       "explanation": "漸近正規性による。",
       "pitfall": "小標本で常に標準正規になるわけではない。",
-      "formula_latex": "W=\\frac{\\hat\\theta-\\theta_0}{\\mathrm{SE}(\\hat\\theta)}"
+      "formula_latex": "W=\\frac{\\hat\\theta-\\theta_0}{\\mathrm{SE}(\\hat\\theta)}",
+      "lecture_id": "T060"
     },
     {
       "id": "Q025",
@@ -404,7 +430,8 @@
       "answer": "\\(\\frac{ad}{bc}=4\\)",
       "explanation": "クロス積比。",
       "pitfall": "オッズ比と確率の比を同一視しない。",
-      "formula_latex": "\\mathrm{OR}=\\frac{ad}{bc}"
+      "formula_latex": "\\mathrm{OR}=\\frac{ad}{bc}",
+      "lecture_id": "T138"
     },
     {
       "id": "Q026",
@@ -416,7 +443,8 @@
       "answer": "0.6",
       "explanation": "共分散÷標準偏差の積。",
       "pitfall": "相関から因果関係を結論しない。",
-      "formula_latex": "\\rho=\\frac{\\mathrm{Cov}(X,Y)}{\\sigma_X\\sigma_Y}"
+      "formula_latex": "\\rho=\\frac{\\mathrm{Cov}(X,Y)}{\\sigma_X\\sigma_Y}",
+      "lecture_id": "T010"
     },
     {
       "id": "Q027",
@@ -428,7 +456,8 @@
       "answer": "\\(\\frac25=0.4\\)",
       "explanation": "\\(\\frac{\\alpha}{\\alpha+\\beta}\\)。",
       "pitfall": "分母はαβではなくα+β。",
-      "formula_latex": "E[X]=\\frac{\\alpha}{\\alpha+\\beta}"
+      "formula_latex": "E[X]=\\frac{\\alpha}{\\alpha+\\beta}",
+      "lecture_id": "T033"
     },
     {
       "id": "Q028",
@@ -440,7 +469,8 @@
       "answer": "\\(\\operatorname{Var}(T)\\ge\\frac1{I(\\theta)}\\)（正則条件下）",
       "explanation": "パラメータθ自身の不偏推定の場合。",
       "pitfall": "不偏性・正則条件を確認せず適用しない。",
-      "formula_latex": "\\mathrm{Var}(\\hat\\theta)\\geq\\frac1{I(\\theta)}"
+      "formula_latex": "\\mathrm{Var}(\\hat\\theta)\\geq\\frac1{I(\\theta)}",
+      "lecture_id": "T048"
     },
     {
       "id": "Q029",
@@ -452,7 +482,8 @@
       "answer": "0.01",
       "explanation": "\\(\\frac{\\alpha}{m}\\)。",
       "pitfall": "問題文が独立と述べても、Bonferroniの成立条件に独立性は不要。",
-      "formula_latex": "\\alpha_{\\mathrm{each}}=\\frac\\alpha m"
+      "formula_latex": "\\alpha_{\\mathrm{each}}=\\frac\\alpha m",
+      "lecture_id": "T067"
     },
     {
       "id": "Q030",
@@ -464,7 +495,8 @@
       "answer": "各点と所属クラスタ中心との平方距離和",
       "explanation": "クラスタ内平方和。",
       "pitfall": "Kは事前に指定する。外れ値や尺度の影響に注意。",
-      "formula_latex": "\\min_{\\{C_k,\\mu_k\\}}\\sum_k\\sum_{i\\in C_k}\\lVert x_i-\\mu_k\\rVert^2"
+      "formula_latex": "\\min_{\\{C_k,\\mu_k\\}}\\sum_k\\sum_{i\\in C_k}\\lVert x_i-\\mu_k\\rVert^2",
+      "lecture_id": "T118"
     },
     {
       "id": "Q031",
@@ -476,7 +508,8 @@
       "answer": "7",
       "explanation": "反復期待値の法則。",
       "pitfall": "E[X|Y]自体は通常Yの関数（確率変数）。",
-      "formula_latex": "E[E[X\\mid Y]]=E[X]"
+      "formula_latex": "E[E[X\\mid Y]]=E[X]",
+      "lecture_id": "T011"
     },
     {
       "id": "Q032",
@@ -488,7 +521,8 @@
       "answer": "独立である",
       "explanation": "一般分布では無相関と独立は同値でない。",
       "pitfall": "『同時に正規分布に従う』ことが重要で、周辺が正規なだけでは不十分。",
-      "formula_latex": "(X,Y)\\text{が同時正規},\\ \\mathrm{Cov}(X,Y)=0\\Rightarrow X\\perp Y"
+      "formula_latex": "(X,Y)\\text{が同時正規},\\ \\mathrm{Cov}(X,Y)=0\\Rightarrow X\\perp Y",
+      "lecture_id": "T036"
     },
     {
       "id": "Q033",
@@ -500,7 +534,8 @@
       "answer": "N(0,1)",
       "explanation": "有限分散等の条件下。",
       "pitfall": "\\(\\sqrt n\\)の倍率と、分母が標準偏差σであることを確認。",
-      "formula_latex": "\\frac{\\sqrt n(\\overline X-\\mu)}{\\sigma}\\xrightarrow{d}N(0,1)"
+      "formula_latex": "\\frac{\\sqrt n(\\overline X-\\mu)}{\\sigma}\\xrightarrow{d}N(0,1)",
+      "lecture_id": "T017"
     },
     {
       "id": "Q034",
@@ -512,7 +547,8 @@
       "answer": "クラスカル・ウォリス検定",
       "explanation": "独立群のノンパラメトリック検定。",
       "pitfall": "分布形が異なる場合に『中央値だけの検定』と断定しない。",
-      "formula_latex": "H=\\frac{12}{N(N+1)}\\sum_{j=1}^k\\frac{R_j^2}{n_j}-3(N+1)"
+      "formula_latex": "H=\\frac{12}{N(N+1)}\\sum_{j=1}^k\\frac{R_j^2}{n_j}-3(N+1)",
+      "lecture_id": "T069"
     },
     {
       "id": "Q035",
@@ -524,7 +560,8 @@
       "answer": "1",
       "explanation": "自己共分散γ(0)による正規化。",
       "pitfall": "自己相関は分散0の定数系列では定義できない。",
-      "formula_latex": "\\rho(k)=\\frac{\\gamma(k)}{\\gamma(0)},\\quad\\rho(0)=1"
+      "formula_latex": "\\rho(k)=\\frac{\\gamma(k)}{\\gamma(0)},\\quad\\rho(0)=1",
+      "lecture_id": "T127"
     },
     {
       "id": "Q036",
@@ -536,7 +573,8 @@
       "answer": "N(0,1/4)",
       "explanation": "定数への確率収束と商。",
       "pitfall": "標準偏差が1/2、分散が1/4。",
-      "formula_latex": "X_n\\xrightarrow d X,\\ Y_n\\xrightarrow p c\\neq0\\Rightarrow X_n/Y_n\\xrightarrow d X/c"
+      "formula_latex": "X_n\\xrightarrow d X,\\ Y_n\\xrightarrow p c\\neq0\\Rightarrow X_n/Y_n\\xrightarrow d X/c",
+      "lecture_id": "T020"
     },
     {
       "id": "Q037",
@@ -548,7 +586,8 @@
       "answer": "N(0,1)",
       "explanation": "正規分布に近づく。",
       "pitfall": "自由度と標本数の関係は検定設計による。",
-      "formula_latex": "T_\\nu=\\frac{Z}{\\sqrt{U/\\nu}}\\xrightarrow[\\nu\\to\\infty]{d}N(0,1)"
+      "formula_latex": "T_\\nu=\\frac{Z}{\\sqrt{U/\\nu}}\\xrightarrow[\\nu\\to\\infty]{d}N(0,1)",
+      "lecture_id": "T037"
     },
     {
       "id": "Q038",
@@ -560,7 +599,8 @@
       "answer": "\\([g'(\\theta)]^2V\\)",
       "explanation": "gが微分可能な場合。",
       "pitfall": "\\(g'(\\theta)=0\\)では一次デルタ法だけでは不十分な場合がある。",
-      "formula_latex": "\\sqrt n\\{g(\\hat\\theta)-g(\\theta)\\}\\xrightarrow d N(0,[g'(\\theta)]^2V)"
+      "formula_latex": "\\sqrt n\\{g(\\hat\\theta)-g(\\theta)\\}\\xrightarrow d N(0,[g'(\\theta)]^2V)",
+      "lecture_id": "T021"
     },
     {
       "id": "Q039",
@@ -572,7 +612,8 @@
       "answer": "\\(e^1\\approx2.718\\)倍",
       "explanation": "係数×変化量を指数変換。",
       "pitfall": "係数をそのまま確率の増分と解釈しない。",
-      "formula_latex": "\\log\\frac p{1-p}=\\beta_0+\\beta_1x"
+      "formula_latex": "\\log\\frac p{1-p}=\\beta_0+\\beta_1x",
+      "lecture_id": "T088"
     },
     {
       "id": "Q040",
@@ -584,7 +625,8 @@
       "answer": "46",
       "explanation": "\\(\\mathrm{AIC}=-2\\log L+2k\\)。",
       "pitfall": "パラメータ数の罰則は2kで、標本数の対数ではない。",
-      "formula_latex": "\\mathrm{AIC}=-2\\log L(\\hat\\theta)+2k"
+      "formula_latex": "\\mathrm{AIC}=-2\\log L(\\hat\\theta)+2k",
+      "lecture_id": "T151"
     },
     {
       "id": "Q041",
@@ -596,7 +638,8 @@
       "answer": "(0.6,0.4)",
       "explanation": "\\(\\boldsymbol\\pi P=\\boldsymbol\\pi\\)を解く。",
       "pitfall": "定常分布と、初期状態からの有限ステップの分布を混同しない。",
-      "formula_latex": "\\boldsymbol\\pi P=\\boldsymbol\\pi,\\quad\\sum_i\\pi_i=1"
+      "formula_latex": "\\boldsymbol\\pi P=\\boldsymbol\\pi,\\quad\\sum_i\\pi_i=1",
+      "lecture_id": "T070"
     },
     {
       "id": "Q042",
@@ -608,7 +651,8 @@
       "answer": "0.5",
       "explanation": "AR(1)の\\(\\rho(k)=\\phi^k\\)。",
       "pitfall": "係数φは一般の非定常AR(1)で自己相関と同一とは限らない。",
-      "formula_latex": "\\rho(k)=\\phi^k\\quad(|\\phi|<1)"
+      "formula_latex": "\\rho(k)=\\phi^k\\quad(|\\phi|<1)",
+      "lecture_id": "T130"
     },
     {
       "id": "Q043",
@@ -620,7 +664,8 @@
       "answer": "\\(60+2\\ln(100)\\approx69.21\\)",
       "explanation": "\\(\\mathrm{BIC}=-2\\log L+k\\ln n\\)。",
       "pitfall": "自然対数log nを使う。",
-      "formula_latex": "\\mathrm{BIC}=-2\\log L(\\hat\\theta)+k\\log n"
+      "formula_latex": "\\mathrm{BIC}=-2\\log L(\\hat\\theta)+k\\log n",
+      "lecture_id": "T152"
     },
     {
       "id": "Q044",
@@ -632,7 +677,8 @@
       "answer": "復元抽出でn個選ぶ",
       "explanation": "元標本の経験分布から再標本化。",
       "pitfall": "非復元抽出だと元標本と同じ集合になり、通常のbootstrapにならない。",
-      "formula_latex": "X_1^*,\\ldots,X_n^*\\overset{\\mathrm{iid}}{\\sim}\\widehat F_n"
+      "formula_latex": "X_1^*,\\ldots,X_n^*\\overset{\\mathrm{iid}}{\\sim}\\widehat F_n",
+      "lecture_id": "T166"
     },
     {
       "id": "Q045",
@@ -644,7 +690,8 @@
       "answer": "コライダー。条件付けによりXとYに見かけの関連が生じうる。",
       "explanation": "コライダーバイアス。",
       "pitfall": "『何でも調整すればよい』は誤り。",
-      "formula_latex": "X\\rightarrow Z\\leftarrow Y"
+      "formula_latex": "X\\rightarrow Z\\leftarrow Y",
+      "lecture_id": "T167"
     },
     {
       "id": "Q046",
@@ -656,7 +703,8 @@
       "answer": "自由度3の\\(\\chi^2\\)分布",
       "explanation": "標準正規の平方和。",
       "pitfall": "正規変数の和ではなく平方和。",
-      "formula_latex": "\\sum_{i=1}^{\\nu}Z_i^2\\sim\\chi_\\nu^2"
+      "formula_latex": "\\sum_{i=1}^{\\nu}Z_i^2\\sim\\chi_\\nu^2",
+      "lecture_id": "T038"
     },
     {
       "id": "Q047",
@@ -668,7 +716,8 @@
       "answer": "現パラメータの下での完全データ対数尤度の条件付き期待値",
       "explanation": "欠測データ・潜在変数の期待値を扱う。",
       "pitfall": "Eステップで欠測値を必ず一点補完するわけではない。",
-      "formula_latex": "Q(\\theta\\mid\\theta^{(t)})=E[\\log p(X,Z\\mid\\theta)\\mid X,\\theta^{(t)}]"
+      "formula_latex": "Q(\\theta\\mid\\theta^{(t)})=E[\\log p(X,Z\\mid\\theta)\\mid X,\\theta^{(t)}]",
+      "lecture_id": "T150"
     },
     {
       "id": "Q048",
@@ -680,7 +729,8 @@
       "answer": "\\(\\min(1,\\pi(\\theta')/\\pi(\\theta))\\)",
       "explanation": "正規化定数は相殺される。",
       "pitfall": "対称提案でない場合に提案密度の比を落とさない。",
-      "formula_latex": "\\alpha=\\min\\left(1,\\frac{\\pi(\\theta')q(\\theta\\mid\\theta')}{\\pi(\\theta)q(\\theta'\\mid\\theta)}\\right)"
+      "formula_latex": "\\alpha=\\min\\left(1,\\frac{\\pi(\\theta')q(\\theta\\mid\\theta')}{\\pi(\\theta)q(\\theta'\\mid\\theta)}\\right)",
+      "lecture_id": "T158"
     },
     {
       "id": "Q049",
@@ -692,7 +742,8 @@
       "answer": "交絡変数",
       "explanation": "適切な調整が必要となりうる。",
       "pitfall": "交絡因子と、調整するとバイアスを生むコライダーを区別する。",
-      "formula_latex": "X\\leftarrow Z\\rightarrow Y"
+      "formula_latex": "X\\leftarrow Z\\rightarrow Y",
+      "lecture_id": "T168"
     },
     {
       "id": "Q050",
@@ -704,9 +755,8 @@
       "answer": "6",
       "explanation": "期待値λt。",
       "pitfall": "λを期間全体の期待回数と混同せず、λtに換算する。",
-      "formula_latex": "N(t)\\sim\\mathrm{Pois}(\\lambda t),\\quad E[N(t)]=\\lambda t"
+      "formula_latex": "N(t)\\sim\\mathrm{Pois}(\\lambda t),\\quad E[N(t)]=\\lambda t",
+      "lecture_id": "T075"
     }
-  ],
-  "policy": "5問/日×10日分。出題順はdayに従う。問題と解答は表示上分離するが公開JSONに解答があるため技術的には閲覧可能。",
-  "lecture_policy": "各問の講義は概念、公式・条件、適用上の注意を具体的に説明。典型ミスはpitfallに分離。"
+  ]
 }
