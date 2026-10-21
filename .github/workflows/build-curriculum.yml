@@ -26,6 +26,7 @@ jobs:
           python scripts/curriculum.py init
           python scripts/curriculum.py build
           python scripts/curriculum.py verify
+          python scripts/test_queue.py
       - name: Commit SQLite and generated JSON
         run: |
           git config user.name "github-actions[bot]"
