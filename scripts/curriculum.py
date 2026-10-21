@@ -98,6 +98,13 @@ def build():
     for row in db.execute("SELECT topic_id,intuition,definition,derivation,example,conditions,pitfalls,exam_criteria,review_status,review_notes,revised_at FROM lectures ORDER BY topic_id"):
         tid,*rest=row
         lectures[tid]=dict(zip(("intuition","definition","derivation","example","conditions","pitfalls","exam_criteria","review_status","review_notes","revised_at"),rest))
+    # Reuse canonical formula TeX stored with a question in SQLite, without copying lecture body into every question.
+    formula_by_topic={}
+    for item in questions:
+        if item.get("formula_latex") and item["topic_id"] not in formula_by_topic:
+            formula_by_topic[item["topic_id"]]=item["formula_latex"]
+    for topic_id,lecture in lectures.items():
+        lecture["formula_latex"]=formula_by_topic.get(topic_id,"")
     # Validate all exported references and preserve immutable question IDs.
     ids={r[0] for r in db.execute("SELECT topic_id FROM topics")}
     assert len(questions)==len({q["id"] for q in questions})
