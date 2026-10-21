@@ -16,6 +16,10 @@ def main():
     assert apply(payload,q,bank,p)
     assert len([s for s in q["sets"] if s["status"] in ("pending","ready")])==3
     assert len(q["sets"][-1]["question_ids"])==5
+    newids={q["id"] for q in bank["questions"] if q["id"] not in {item for z in queue["sets"] if z["status"] in ("pending","ready","consumed") for item in z["question_ids"]}}
+    selected=q["sets"][-1]["question_ids"]
+    assert sum(qid in newids for qid in selected)==3, "Expected 3 unused questions"
+    assert sum(qid not in newids for qid in selected)==2, "Expected 2 graded review questions"
     assert p["total_questions"]==legacy["total_questions"]+5
     assert p["history"][:len(legacy["history"])]==legacy["history"]
     assert not apply(payload,q,bank,p),"Replay must be no-op"
