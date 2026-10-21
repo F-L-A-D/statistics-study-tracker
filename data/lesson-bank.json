@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "version": "2026-10-21-math-inline-v2",
+  "version": "2026-10-21-math-normalized-50",
   "status": "ready",
   "target_date": "2027-01-16",
   "days": [
@@ -257,7 +257,7 @@
       "level": "基本",
       "lecture": "母分散既知の正規母集団（または大標本近似）では、母平均の95%信頼区間は\\(\\bar X\\pm1.96\\sigma/\\sqrt n\\)。信頼係数95%とは、同じ手順を繰り返した区間の約95%が真値を含むという被覆確率の意味。",
       "question": "標本平均10、既知母標準偏差4、\\(n=16\\)の95%両側CIは？",
-      "answer": "\\(10\\pm1.96\\times1\\)= \\([8.04,11.96]\\)",
+      "answer": "\\(10\\pm1.96\\times1=[8.04,11.96]\\)",
       "explanation": "既知分散の正規近似。",
       "pitfall": "標本数nではなく\\(\\sqrt n\\)で割る。母分散未知・小標本ではt分布を検討。",
       "formula_latex": "\\overline X\\pm z_{0.975}\\frac{\\sigma}{\\sqrt n}"
@@ -363,7 +363,7 @@
       "topic_id": "T032",
       "topic_name": "ガンマ分布",
       "level": "基本",
-      "lecture": "Gamma(shape α, rate β)では\\(E[X]=\\frac{\\alpha}{\\beta}\\)、\\(\\operatorname{Var}(X)=\\frac{\\alpha}{\\beta^2}\\)。指数分布は\\(\\alpha=1\\)の場合。尺度パラメータθを使う流儀では\\(E[X]=\\alpha\\theta\\)となるので問題文のrate/scaleを最初に確認する。",
+      "lecture": "\\(\\operatorname{Gamma}(\\mathrm{shape}=\\alpha,\\mathrm{rate}=\\beta)\\)では\\(E[X]=\\frac{\\alpha}{\\beta}\\)、\\(\\operatorname{Var}(X)=\\frac{\\alpha}{\\beta^2}\\)。指数分布は\\(\\alpha=1\\)の場合。尺度パラメータθを使う流儀では\\(E[X]=\\alpha\\theta\\)となるので問題文のrate/scaleを最初に確認する。",
       "question": "\\(\\operatorname{Gamma}(\\mathrm{shape}=3,\\mathrm{rate}=2)\\)の平均は？",
       "answer": "1.5",
       "explanation": "shape/rate。",
