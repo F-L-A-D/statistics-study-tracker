@@ -24,6 +24,7 @@ jobs:
       - name: Initialize missing SQLite and export public JSON
         run: |
           python scripts/curriculum.py init
+          python scripts/migrate_lecture_math.py
           python scripts/curriculum.py build
           python scripts/curriculum.py verify
           python scripts/test_queue.py
