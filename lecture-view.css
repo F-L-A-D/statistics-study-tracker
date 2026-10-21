@@ -1,0 +1,10 @@
+.lecture-body{min-width:0;line-height:1.8}
+.lecture-section{padding:14px 0;border-bottom:1px solid #dce7e9;min-width:0}
+.lecture-section:last-child{border-bottom:0}
+.lecture-section h3{font-size:14px;margin:0 0 8px;font-weight:700;color:#244862}
+.lecture-prose{margin:6px 0;white-space:pre-wrap;overflow-wrap:anywhere}
+.lecture-equation{display:block;max-width:100%;padding:12px 8px;margin:12px 0;background:#fff;border:1px solid #dce7ef;border-radius:10px;overflow-x:auto;overflow-y:hidden;text-align:center}
+.lecture-equation .katex-display{margin:0!important;width:max-content;min-width:100%}
+.lecture-primary-formula{margin-bottom:12px}
+.lecture-math-unavailable{color:#a0332a;text-align:left;font-family:monospace;white-space:pre-wrap}
+.lecture-empty{padding:12px;color:#8a4e30}
