@@ -4,6 +4,10 @@ on:
     branches: [main]
     paths:
       - 'scripts/**'
+      - 'lecture-view.js'
+      - 'lecture-view.css'
+      - 'practice.html'
+      - 'lectures.html'
       - '.github/workflows/build-curriculum.yml'
   workflow_dispatch:
 permissions:
@@ -28,6 +32,7 @@ jobs:
           python scripts/curriculum.py build
           python scripts/curriculum.py verify
           python scripts/test_queue.py
+          node scripts/test_lecture_view.js
       - name: Commit SQLite and generated JSON
         run: |
           git config user.name "github-actions[bot]"
