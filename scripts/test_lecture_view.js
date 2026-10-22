@@ -21,6 +21,17 @@ for(const id of ids){
 const example=view.textBlocks('前置き \\(x^2+1\\) 後置き \\[\\frac{1}{2}\\]');
 assert.equal((example.match(/class="lecture-equation"/g)||[]).length,2);
 assert.ok(!example.includes('\\(') && !example.includes('\\['));
+// Standalone TeX blocks should never inherit Japanese punctuation on either side.
+const punct=view.textBlocks('ベイズの定理は、 \(P(A\mid B)=0.25\)。分母は全確率、 \[P(B)=0.5\]。次の説明は続く。');
+assert.ok(punct.includes('<p class="lecture-prose">ベイズの定理は</p>'),punct);
+assert.ok(punct.includes('<p class="lecture-prose">分母は全確率</p>'),punct);
+assert.ok(punct.includes('<p class="lecture-prose">次の説明は続く。</p>'),punct);
+assert.equal((punct.match(/class="lecture-equation"/g)||[]).length,2);
+assert.ok(!punct.includes('>。</p>') && !punct.includes('>、</p>'),punct);
+assert.ok(!punct.includes('>。分母') && !punct.includes('>、分母'),punct);
+assert.ok(punct.includes('0.25') && punct.includes('0.5'),"Decimals inside TeX must be preserved");
+const plain=view.textBlocks('通常の説明文。句読点、は維持する。');
+assert.ok(plain.includes('通常の説明文。句読点、は維持する。'),plain);
 for(const page of pages){
  assert.ok(page.includes('src="./lecture-view.js"'),"Missing common renderer import");
  assert.ok(page.includes('href="./lecture-view.css"'),"Missing shared CSS");
@@ -29,4 +40,4 @@ for(const page of pages){
 }
 assert.ok(pages[0].includes('LectureView.textBlocks(q.question)'));
 assert.ok(pages[0].includes('function copySet()'));
-console.log('PASS: 15 lecture masters render block math; shared renderer in both pages; practice copy preserved');
+console.log('PASS: shared block math, punctuation boundaries, source prose, answer copy, and 15 topic lectures');
