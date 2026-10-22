@@ -11,16 +11,24 @@
   const mathPattern = /\\\[([\s\S]*?)\\\]|\\\(([\s\S]*?)\\\)|\$\$([\s\S]*?)\$\$/g;
   function textBlocks(source) {
     const src = String(source || "");
-    let html = "", index = 0, found;
+    let html = "", index = 0, found, afterEquation = false;
     const re = new RegExp(mathPattern.source, "g");
+    // Punctuation belonging directly to a displayed equation is omitted in the
+    // presentation only. Keep the original lecture text unchanged in SQLite.
+    const cleanLeading = value => value.replace(/^[、。]+/u, "").trim();
+    const cleanTrailing = value => value.replace(/[、。]+$/u, "").trim();
     while ((found = re.exec(src)) !== null) {
-      const prose = src.slice(index, found.index).trim();
+      let prose = src.slice(index, found.index).trim();
+      if (afterEquation) prose = cleanLeading(prose);
+      prose = cleanTrailing(prose);
       if (prose) html += '<p class="lecture-prose">' + escape(prose) + '</p>';
       const tex = found[1] ?? found[2] ?? found[3];
       html += '<div class="lecture-equation" data-lecture-tex="' + escape(tex) + '"></div>';
       index = re.lastIndex;
+      afterEquation = true;
     }
-    const remaining = src.slice(index).trim();
+    let remaining = src.slice(index).trim();
+    if (afterEquation) remaining = cleanLeading(remaining);
     if (remaining) html += '<p class="lecture-prose">' + escape(remaining) + '</p>';
     return html;
   }
